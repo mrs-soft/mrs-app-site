@@ -23,6 +23,12 @@ const OurProductsBlock = () => {
           <Typography variant='body1'>
             {OUR_PRODUCT_BLOCK.mrs.body} <Link href=''>№... (ссылка на PDF)</Link>.
           </Typography>
+          <Button variant='text' className={classes.button}>
+            <Typography variant='body1' className={classes.textColor}>
+              {BUTTONS.more}
+            </Typography>
+            <ArrowIcon className={classes.icon} />
+          </Button>
         </div>
         <SecondImg className={classes.imgStyle} />
       </div>
@@ -37,14 +43,14 @@ const OurProductsBlock = () => {
           </Typography>
           <Button variant='text' className={classes.button}>
             <Typography variant='body1' className={classes.textColor}>
-              {BUTTONS.buyProduct}
+              {BUTTONS.more}
             </Typography>
             <ArrowIcon className={classes.icon} />
           </Button>
         </div>
         <ThirdImg className={classes.imgStyle} />
       </div>
-      <div className={classes.itemContainer}>
+      {/* <div className={classes.itemContainer}>
         <div className={classes.itemText}>
           <Typography variant='h5' className={classes.itemHeader}>
             {OUR_PRODUCT_BLOCK.pkUSP.title}
@@ -52,7 +58,7 @@ const OurProductsBlock = () => {
           <Typography variant='body1'>{OUR_PRODUCT_BLOCK.pkUSP.body}</Typography>
         </div>
         <FourthImg className={classes.imgStyle} />
-      </div>
+      </div> */}
     </div>
   )
 }

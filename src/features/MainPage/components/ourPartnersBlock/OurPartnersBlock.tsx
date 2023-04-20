@@ -57,5 +57,6 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'row',
     flexWrap: 'wrap',
     maxWidth: 1260,
+    justifyContent: 'center',
   },
 }))

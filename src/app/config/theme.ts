@@ -20,28 +20,28 @@ export const uiTheme = createTheme({
   typography: {
     fontFamily: ['Inter', 'sans-serif', 'Roboto', 'Helvetica Neue', 'Arial'].join(','),
     h3: {
-      fontSize: '3rem',
+      fontSize: `clamp(2rem, 3rem, 3rem)`,
       lineHeight: '3.5rem',
       fontWeight: 700,
     },
     h4: {
-      fontSize: '2rem',
+      fontSize: `clamp(1rem, 2rem, 2rem)`,
       lineHeight: '2.5rem',
       fontWeight: 700,
     },
     h5: {
-      fontSize: '1.5rem',
+      fontSize: `clamp(0.5rem, 1.5rem, 1.5rem)`,
       lineHeight: '2rem',
       fontWeight: 700,
     },
     subtitle1: {
-      fontSize: '1rem',
+      fontSize: `clamp(0.5rem, 1rem, 1rem)`,
       lineHeight: '1.5rem',
       fontWeight: 600,
       letterSpacing: '-0.013rem',
     },
     body1: {
-      fontSize: '1rempx',
+      fontSize: `clamp(0.3rem, 1rem, 1rem)`,
       lineHeight: '1.5rem',
       fontWeight: 400,
       letterSpacing: '-0.013rem',
@@ -55,7 +55,7 @@ export const uiTheme = createTheme({
       '@global': {
         '@font-face': fontFace,
         '*, *::before, *::after': {
-          boxSizing: 'inherit',
+          boxSizing: 'border-box',
           margin: 0,
           padding: 0,
         },
@@ -65,6 +65,16 @@ export const uiTheme = createTheme({
       root: {
         backgroundColor: '#E5E7EB',
         height: 1,
+      },
+    },
+    MuiLink: {
+      root: {
+        textDecoration: 'none',
+      },
+    },
+    MuiTypography: {
+      root: {
+        textDecoration: 'none',
       },
     },
   },

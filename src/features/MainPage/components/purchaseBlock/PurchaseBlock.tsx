@@ -17,7 +17,7 @@ const PurchaseBlock = () => {
       </div>
       <Button variant='text' className={classes.button}>
         <Typography variant='body1' className={classes.textColor}>
-          {BUTTONS.callManager}
+          {BUTTONS.more}
         </Typography>
       </Button>
     </div>

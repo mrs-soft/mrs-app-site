@@ -1,7 +1,7 @@
 import { Typography, makeStyles } from '@material-ui/core'
-import { LogoIcon } from '../../../../app/assets/icons'
-import { MAX_WIDTH_CONTAINER } from '../firstBlock/FirstBlock'
-import { LINKS } from '../../../../app/utils/constants'
+import { LogoIcon, MenuIcon } from '../../app/assets/icons'
+import { MAX_WIDTH_CONTAINER } from '../MainPage/components/firstBlock/FirstBlock'
+import { LINKS } from '../../app/utils/constants'
 
 const Header = () => {
   const classes = useStyles()
@@ -22,6 +22,7 @@ const Header = () => {
         <Typography variant='body1'>О нас</Typography>
         {/* <Typography variant='body1'>{LINKS.partners}</Typography> */}
       </div>
+      <MenuIcon className={classes.menuIcon} />
     </div>
   )
 }
@@ -47,12 +48,22 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(2),
   },
   rigthBlock: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    color: theme.palette.text.secondary,
+    display: 'none',
+    '@media only screen and (min-width: 490px)': {
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      color: theme.palette.text.secondary,
+    },
   },
   text: {
     marginRight: theme.spacing(10),
+  },
+  menuIcon: {
+    display: 'none',
+    '@media only screen and (max-width: 490px)': {
+      display: 'flex',
+      justifyContent: 'center',
+    },
   },
 }))

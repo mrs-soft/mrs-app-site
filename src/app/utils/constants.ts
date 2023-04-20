@@ -27,6 +27,7 @@ export const OUR_PRODUCT_BLOCK = {
 }
 
 export const BUTTONS = {
+  more: 'Узнать больше',
   buyProduct: 'Купить Стройконтроль',
   callManager: 'Связаться с менеджером',
 }
@@ -39,6 +40,9 @@ export const PURCHASE_BLOCK = {
 export const FOOTER_BLOCK = {
   company: 'Компания',
   products: 'Продукты',
+  resources: 'Ресурсы',
   ooo: '© 2023, ООО «Мобильные решения для строительства»',
   privacyPolicy: 'Политика конфиденциальности',
+  documentsMrs: 'Документация «МРС Платформа»',
+  pkStroyControl: 'Функционал ПК «СтройКонтроль»',
 }

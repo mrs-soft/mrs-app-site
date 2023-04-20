@@ -10,3 +10,4 @@ export { ReactComponent as CapitalImg } from 'app/assets/icons/mainPage/ourPartn
 export { ReactComponent as GlavstroiImg } from 'app/assets/icons/mainPage/ourPartners/glavstroi.svg'
 export { ReactComponent as A101Img } from 'app/assets/icons/mainPage/ourPartners/a101.svg'
 export { ReactComponent as ArrowIcon } from 'app/assets/icons/mainPage/arrow.svg'
+export { ReactComponent as MenuIcon } from 'app/assets/icons/mainPage/menu.svg'

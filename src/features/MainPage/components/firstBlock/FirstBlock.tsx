@@ -42,6 +42,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'bottom',
     maxWidth: '100%',
+    '@media only screen and (max-width: 700px)': {
+      backgroundSize: '410px 350px',
+    },
   },
   container: {
     display: 'flex',
@@ -50,6 +53,9 @@ const useStyles = makeStyles((theme) => ({
     alignSelf: 'center',
     maxWidth: MAX_WIDTH_CONTAINER,
     marginTop: theme.spacing(32),
+    '@media only screen and (max-width: 700px)': {
+      marginTop: theme.spacing(16),
+    },
   },
   textBlock: {
     maxWidth: MAX_WIDTH_TEXT,
@@ -64,6 +70,11 @@ const useStyles = makeStyles((theme) => ({
   imgStyle: {
     marginTop: theme.spacing(26.5),
     maxWidth: '100%',
+    width: '100%',
+    '@media only screen and (max-width: 700px)': {
+      height: '200px',
+      marginTop: theme.spacing(12),
+    },
   },
   textBottom: {
     marginBottom: theme.spacing(8),

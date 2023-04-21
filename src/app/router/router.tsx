@@ -33,9 +33,12 @@ const useStyles = makeStyles((theme) =>
       justifyContent: 'center',
       flexDirection: 'column',
       alignItems: 'center',
-      padding: theme.spacing(2),
       margin: 0,
+      padding: theme.spacing(4),
       backgroundColor: theme.palette.background.default,
+      '@media only screen and (max-width: 700px)': {
+        padding: theme.spacing(4),
+      },
     },
   }),
 )

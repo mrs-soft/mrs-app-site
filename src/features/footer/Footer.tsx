@@ -35,8 +35,8 @@ const Footer = () => {
           <Typography variant='subtitle1' className={classes.otherColor}>
             {FOOTER_BLOCK.resources}
           </Typography>
-          <Typography variant='body1'>{FOOTER_BLOCK.pkStroyControl}</Typography>
-          <Typography variant='body1'>{FOOTER_BLOCK.documentsMrs}</Typography>
+          <Typography variant='body1'>{FOOTER_BLOCK.documents}</Typography>
+          <Typography variant='body1'>{FOOTER_BLOCK.developers}</Typography>
         </div>
       </div>
       <Divider className={classes.divider} />
@@ -62,6 +62,9 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(32, 0, 32),
     maxHeight: MAX_HEIGHT_CONTAINER,
     background: theme.palette.background.default,
+    '@media only screen and (max-width: 700px)': {
+      padding: theme.spacing(16, 0, 16),
+    },
   },
   topBlock: {
     display: 'flex',
@@ -70,7 +73,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'space-between',
     maxWidth: MAX_WIDTH_CONTAINER,
     width: '100%',
-    '@media only screen and (max-width: 490px)': {
+    '@media only screen and (max-width: 700px)': {
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'space-between',
@@ -85,7 +88,7 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     gap: theme.spacing(4),
     color: theme.palette.text.secondary,
-    '@media only screen and (max-width: 490px)': {
+    '@media only screen and (max-width: 700px)': {
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'space-between',
@@ -119,5 +122,8 @@ const useStyles = makeStyles((theme) => ({
   },
   dividerVertical: {
     height: 19,
+    '@media only screen and (max-width: 700px)': {
+      display: 'none',
+    },
   },
 }))

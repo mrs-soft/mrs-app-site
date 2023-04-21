@@ -14,12 +14,42 @@ const OurPartnersBlock = () => {
         </Typography>
       </div>
       <div className={classes.cardContainer}>
-        <TatneftImg />
-        <MosingproektImg />
-        <PolusImg />
-        <GlavstroiImg />
-        <A101Img />
-        <CapitalImg />
+        <div className={classes.animation}>
+          <TatneftImg />
+        </div>
+        <div className={classes.animation}>
+          <MosingproektImg />
+        </div>
+        <div className={classes.animation}>
+          <PolusImg />
+        </div>
+        <div className={classes.animation}>
+          <GlavstroiImg />
+        </div>
+        <div className={classes.animation}>
+          <A101Img />
+        </div>
+        <div className={classes.animation}>
+          <CapitalImg />
+        </div>
+        <div className={classes.animation}>
+          <TatneftImg />
+        </div>
+        <div className={classes.animation}>
+          <MosingproektImg />
+        </div>
+        <div className={classes.animation}>
+          <PolusImg />
+        </div>
+        <div className={classes.animation}>
+          <GlavstroiImg />
+        </div>
+        <div className={classes.animation}>
+          <A101Img />
+        </div>
+        <div className={classes.animation}>
+          <CapitalImg />
+        </div>
       </div>
     </div>
   )
@@ -53,10 +83,33 @@ const useStyles = makeStyles((theme) => ({
   },
   cardContainer: {
     display: 'flex',
-    alignItems: 'center',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    maxWidth: 1260,
-    justifyContent: 'center',
+    height: 124,
+    width: 960,
+    overflow: 'hidden',
+    position: 'relative',
+    '-webkit-mask-image': `linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%)`,
+    maskImage: `linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%)`,
+    '@media only screen and (max-width: 1200px)': {
+      width: 700,
+    },
+    '@media only screen and (max-width: 700px)': {
+      width: 400,
+    },
+  },
+  animation: {
+    display: 'flex',
+    width: '250px',
+    height: '100%',
+    position: 'relative',
+    animation: '20s linear infinite $example',
+    '-webkit-animation': `20s linear infinite $example`,
+  },
+  '@keyframes example': {
+    '0%': { transform: 'translateX(0)' },
+    '100%': { transform: 'translateX(calc(-250px * 6))' },
+  },
+  '@-webkit-keyframes example': {
+    '0%': { transform: 'translateX(0)' },
+    '100%': { transform: 'translateX(calc(-250px * 6))' },
   },
 }))

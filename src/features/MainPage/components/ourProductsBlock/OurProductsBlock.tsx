@@ -73,15 +73,24 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     paddingTop: theme.spacing(32),
     backgroundColor: theme.palette.background.paper,
+    '@media only screen and (max-width: 700px)': {
+      paddingTop: theme.spacing(16),
+    },
   },
   title: {
     display: 'flex',
     alignItems: 'center',
     marginBottom: theme.spacing(16),
     flexDirection: 'row',
+    '@media only screen and (max-width: 700px)': {
+      marginBottom: theme.spacing(8),
+    },
   },
   itemContainer: {
     marginBottom: theme.spacing(24),
+    '@media only screen and (max-width: 700px)': {
+      marginBottom: theme.spacing(12),
+    },
   },
   itemHeader: {
     marginBottom: theme.spacing(4),
@@ -92,6 +101,10 @@ const useStyles = makeStyles((theme) => ({
   imgStyle: {
     marginTop: theme.spacing(10),
     maxWidth: '100%',
+    '@media only screen and (max-width: 700px)': {
+      marginTop: theme.spacing(5),
+      height: '200px',
+    },
   },
   textColor: {
     color: theme.palette.primary.main,

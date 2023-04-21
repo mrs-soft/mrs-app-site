@@ -43,6 +43,6 @@ export const FOOTER_BLOCK = {
   resources: 'Ресурсы',
   ooo: '© 2023, ООО «Мобильные решения для строительства»',
   privacyPolicy: 'Политика конфиденциальности',
-  documentsMrs: 'Документация «МРС Платформа»',
-  pkStroyControl: 'Функционал ПК «СтройКонтроль»',
+  documents: 'Документация',
+  developers: 'Разработчикам',
 }

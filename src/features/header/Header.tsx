@@ -49,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
   },
   rigthBlock: {
     display: 'none',
-    '@media only screen and (min-width: 490px)': {
+    '@media only screen and (min-width: 700px)': {
       display: 'flex',
       flexDirection: 'row',
       justifyContent: 'space-between',
@@ -61,7 +61,7 @@ const useStyles = makeStyles((theme) => ({
   },
   menuIcon: {
     display: 'none',
-    '@media only screen and (max-width: 490px)': {
+    '@media only screen and (max-width: 700px)': {
       display: 'flex',
       justifyContent: 'center',
     },

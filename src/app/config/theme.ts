@@ -20,19 +20,31 @@ export const uiTheme = createTheme({
   typography: {
     fontFamily: ['Inter', 'sans-serif', 'Roboto', 'Helvetica Neue', 'Arial'].join(','),
     h3: {
-      fontSize: `clamp(2rem, 3rem, 3rem)`,
-      lineHeight: '3.5rem',
+      fontSize: `clamp(0.5rem, 2.5rem, 3rem)`,
+      lineHeight: `3.5rem`,
       fontWeight: 700,
+      '@media (max-width:420px)': {
+        fontSize: '2rem',
+        lineHeight: `2.5rem`,
+      },
     },
     h4: {
-      fontSize: `clamp(1rem, 2rem, 2rem)`,
+      fontSize: `clamp(0.5rem, 2rem, 2rem)`,
       lineHeight: '2.5rem',
       fontWeight: 700,
+      '@media (max-width:420px)': {
+        fontSize: '1.5rem',
+        lineHeight: `2rem`,
+      },
     },
     h5: {
       fontSize: `clamp(0.5rem, 1.5rem, 1.5rem)`,
       lineHeight: '2rem',
       fontWeight: 700,
+      '@media (max-width:420px)': {
+        fontSize: '1rem',
+        lineHeight: `1.5rem`,
+      },
     },
     subtitle1: {
       fontSize: `clamp(0.5rem, 1rem, 1rem)`,

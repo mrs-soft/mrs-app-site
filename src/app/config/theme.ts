@@ -102,6 +102,7 @@ export const uiTheme = createTheme({
     MuiFormLabel: {
       root: {
         color: '#111827',
+        marginRight: 0,
         marginBottom: '8px',
         '&$focused': {
           color: '#111827',
@@ -112,11 +113,19 @@ export const uiTheme = createTheme({
         color: 'rgba(249, 115, 22, 1)',
       },
     },
-    MuiOutlinedInput: {
+    MuiFormControlLabel: {
       root: {
-        '&$notchedOutline': {
-          borderColor: '#E5E7EB !important',
+        color: '#111827',
+        marginRight: 0,
+        '&$focused': {
+          color: '#111827',
+          borderColor: '#E5E7EB',
         },
+      },
+    },
+    MuiOutlinedInput: {
+      notchedOutline: {
+        borderColor: '#E5E7EB !important',
       },
     },
     MuiCheckbox: {

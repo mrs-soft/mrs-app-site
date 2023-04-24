@@ -83,6 +83,9 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(32),
     display: 'flex',
     flexDirection: 'column',
+    '@media only screen and (max-width: 900px)': {
+      width: '90%',
+    },
     '@media only screen and (max-width: 700px)': {
       marginTop: theme.spacing(16),
     },

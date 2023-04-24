@@ -5,8 +5,6 @@ import { FOOTER_BLOCK, LINKS } from '../../app/utils/constants'
 import { To } from '../../app/router/to'
 import { Link } from 'react-router-dom'
 
-const MAX_HEIGHT_CONTAINER = 432
-
 const Footer = () => {
   const classes = useStyles()
 
@@ -21,14 +19,18 @@ const Footer = () => {
           <Typography variant='subtitle1' className={classes.otherColor}>
             {FOOTER_BLOCK.products}
           </Typography>
-          <Typography variant='body1'>{LINKS.mrsPlatrform}</Typography>
+          <Typography variant='body1' component={Link} to={To.platform} className={classes.linkColor}>
+            {LINKS.mrsPlatrform}
+          </Typography>
           <Typography variant='body1'>{LINKS.stroyControl}</Typography>
         </div>
         <div className={classes.rightBlock}>
           <Typography variant='subtitle1' className={classes.otherColor}>
             {FOOTER_BLOCK.company}
           </Typography>
-          <Typography variant='body1'>{LINKS.aboutUs}</Typography>
+          <Typography variant='body1' component={Link} to={To.about} className={classes.linkColor}>
+            {LINKS.aboutUs}
+          </Typography>
           {/* <Typography variant='body1'>{LINKS.partners}</Typography> */}
         </div>
         <div className={classes.rightBlock}>
@@ -59,11 +61,15 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     flexDirection: 'column',
     width: '100%',
+    maxHeight: 432,
     padding: theme.spacing(32, 0, 32),
-    maxHeight: MAX_HEIGHT_CONTAINER,
     background: theme.palette.background.default,
+    '@media only screen and (max-width: 965px)': {
+      width: '90%',
+    },
     '@media only screen and (max-width: 700px)': {
       padding: theme.spacing(16, 0, 16),
+      maxHeight: 600,
     },
   },
   topBlock: {
@@ -78,6 +84,8 @@ const useStyles = makeStyles((theme) => ({
       flexDirection: 'column',
       justifyContent: 'space-between',
       gap: theme.spacing(10),
+      maxHeight: 250,
+      flexWrap: 'wrap',
     },
   },
   bottomBlock: {

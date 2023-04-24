@@ -63,16 +63,19 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     flexDirection: 'column',
     width: '100%',
-    padding: theme.spacing(32, 0, 32),
+    padding: theme.spacing(33, 0, 24),
     // backgroundImage: `linear-gradient(to top, transparent 50%, ${theme.palette.background.default} 90%), linear-gradient(to right, transparent 85%, ${theme.palette.background.default} 90%), linear-gradient(to left, transparent 85%, ${theme.palette.background.default} 90%), url(${Background})`,
     // backgroundRepeat: 'no-repeat',
     // backgroundPosition: 'bottom',
     maxWidth: '100%',
+    '@media only screen and (max-width: 700px)': {
+      padding: theme.spacing(20, 0, 10),
+    },
   },
   title: {
     display: 'flex',
     alignItems: 'center',
-    marginBottom: theme.spacing(16),
+    marginBottom: theme.spacing(6),
     flexDirection: 'row',
   },
   iconTop: {
@@ -83,13 +86,16 @@ const useStyles = makeStyles((theme) => ({
   },
   cardContainer: {
     display: 'flex',
-    height: 124,
-    width: 960,
+    height: 120,
+    width: '100%',
     overflow: 'hidden',
     position: 'relative',
     '-webkit-mask-image': `linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%)`,
     maskImage: `linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%)`,
     '@media only screen and (max-width: 1200px)': {
+      width: 1000,
+    },
+    '@media only screen and (max-width: 1000px)': {
       width: 700,
     },
     '@media only screen and (max-width: 700px)': {
@@ -98,9 +104,9 @@ const useStyles = makeStyles((theme) => ({
   },
   animation: {
     display: 'flex',
-    width: '250px',
     height: '100%',
     position: 'relative',
+    marginLeft: theme.spacing(16),
     animation: '20s linear infinite $example',
     '-webkit-animation': `20s linear infinite $example`,
   },

@@ -1,5 +1,5 @@
 import { Button, Link, Typography, makeStyles } from '@material-ui/core'
-import { ArrowIcon, FourthImg, SecondImg, ThirdImg } from '../../../../app/assets/icons'
+import { ArrowIcon, SecondImg, ThirdImg } from '../../../../app/assets/icons'
 import { BUTTONS, OUR_PRODUCT_BLOCK } from '../../../../app/utils/constants'
 
 const MAX_WIDTH_ITEM_TEXT = 1000
@@ -20,8 +20,9 @@ const OurProductsBlock = () => {
           <Typography variant='h5' className={classes.itemHeader}>
             {OUR_PRODUCT_BLOCK.mrs.title}
           </Typography>
+          <Typography variant='body1'>{OUR_PRODUCT_BLOCK.mrs.body} </Typography>
           <Typography variant='body1'>
-            {OUR_PRODUCT_BLOCK.mrs.body} <Link href=''>№... (ссылка на PDF)</Link>.
+            Зарегистрирован в реестре отечественного ПО <Link href=''>№... (ссылка на PDF)</Link>.
           </Typography>
           <Button variant='text' className={classes.button}>
             <Typography variant='body1' className={classes.textColor}>
@@ -37,9 +38,9 @@ const OurProductsBlock = () => {
           <Typography variant='h5' className={classes.itemHeader}>
             {OUR_PRODUCT_BLOCK.pkSK.title}
           </Typography>
+          <Typography variant='body1'>{OUR_PRODUCT_BLOCK.pkSK.body}</Typography>
           <Typography variant='body1'>
-            {OUR_PRODUCT_BLOCK.pkSK.body}
-            <Link href=''>№... (ссылка на PDF)</Link>.
+            Зарегистрирован в реестре отечественного ПО <Link href=''>№... (ссылка на PDF)</Link>.
           </Typography>
           <Button variant='text' className={classes.button}>
             <Typography variant='body1' className={classes.textColor}>
@@ -79,17 +80,40 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     display: 'flex',
-    alignItems: 'center',
     marginBottom: theme.spacing(16),
     flexDirection: 'row',
+    maxWidth: 1200,
+    justifyContent: 'flex-start',
+    width: '100%',
+    '@media only screen and (max-width: 965px)': {
+      marginLeft: theme.spacing(10),
+      marginRight: theme.spacing(10),
+      width: '91%',
+    },
     '@media only screen and (max-width: 700px)': {
-      marginBottom: theme.spacing(8),
+      marginBottom: theme.spacing(10),
+      marginLeft: theme.spacing(6),
+      marginRight: theme.spacing(6),
+    },
+    '@media only screen and (max-width: 420px)': {
+      marginLeft: theme.spacing(4),
+      marginRight: theme.spacing(4),
     },
   },
   itemContainer: {
     marginBottom: theme.spacing(24),
+    '@media only screen and (max-width: 965px)': {
+      marginLeft: theme.spacing(10),
+      marginRight: theme.spacing(10),
+    },
     '@media only screen and (max-width: 700px)': {
       marginBottom: theme.spacing(12),
+      marginLeft: theme.spacing(6),
+      marginRight: theme.spacing(6),
+    },
+    '@media only screen and (max-width: 420px)': {
+      marginLeft: theme.spacing(4),
+      marginRight: theme.spacing(4),
     },
   },
   itemHeader: {
@@ -101,9 +125,15 @@ const useStyles = makeStyles((theme) => ({
   imgStyle: {
     marginTop: theme.spacing(10),
     maxWidth: '100%',
+    '@media only screen and (max-width: 965px)': {
+      marginTop: theme.spacing(10),
+      height: '495px',
+    },
     '@media only screen and (max-width: 700px)': {
-      marginTop: theme.spacing(5),
-      height: '200px',
+      height: '332px',
+    },
+    '@media only screen and (max-width: 420px)': {
+      height: '210px',
     },
   },
   textColor: {

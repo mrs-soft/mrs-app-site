@@ -6,6 +6,8 @@ import NotFound from '../../features/ErrorPage/ErrorPage'
 import PrivacyPolicyPage from '../../features/PrivacyPolicyPage/PrivacyPolicy'
 import Header from '../../features/header/Header'
 import Footer from '../../features/footer/Footer'
+import PlatformPage from '../../features/PlatformPage/PlatformPage'
+import AboutUsPage from '../../features/aboutUsPage/AboutUsPage'
 
 const MainRouter = () => {
   const classes = useStyles()
@@ -16,6 +18,8 @@ const MainRouter = () => {
       <Routes>
         <Route path={To.main} element={<MainPage />} />
         <Route path={To.privacy} element={<PrivacyPolicyPage />} />
+        <Route path={To.platform} element={<PlatformPage />} />
+        <Route path={To.about} element={<AboutUsPage />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />
@@ -34,11 +38,8 @@ const useStyles = makeStyles((theme) =>
       flexDirection: 'column',
       alignItems: 'center',
       margin: 0,
-      padding: theme.spacing(4),
+      padding: theme.spacing(1),
       backgroundColor: theme.palette.background.default,
-      '@media only screen and (max-width: 700px)': {
-        padding: theme.spacing(4),
-      },
     },
   }),
 )

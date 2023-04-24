@@ -1,7 +1,7 @@
-import { Typography, makeStyles } from '@material-ui/core'
-import { FirstImg } from '../../../../app/assets/icons'
+import { Button, Typography, makeStyles } from '@material-ui/core'
 import Background from '../../../../app/assets/icons/mainPage/background.svg'
-import { FIRST_BLOCK } from '../../../../app/utils/constants'
+import { PlatformImg } from '../../../../app/assets/icons'
+import { BUTTONS } from '../../../../app/utils/constants'
 
 export const MAX_WIDTH_CONTAINER = 1200
 const MAX_WIDTH_TEXT = 948
@@ -13,18 +13,16 @@ const FirstBlock = () => {
     <div className={classes.background}>
       <div className={classes.container}>
         <div className={classes.textBlock}>
-          <Typography variant='h3'>Российский разработчик</Typography>
+          <Typography variant='h3'>МРС Платформа. Цифровизация ваших </Typography>
           <Typography variant='h3' className={classes.textColor}>
-            цифровых продуктов
-          </Typography>
-          <Typography variant='h3' className={classes.textBottom}>
-            для строительных и промышленных предприятий
+            уникальных процессов
           </Typography>
           <Typography variant='h5' className={classes.textBold}>
-            {FIRST_BLOCK.body}
+            Создайте вашу эко-систему бизнес-приложений на единой облачной платформе с современными мобильным клиентами
           </Typography>
+          <Button variant='contained'>{BUTTONS.moreIntegration}</Button>
         </div>
-        <FirstImg className={classes.imgStyle} />
+        <PlatformImg className={classes.imgStyle} />
       </div>
     </div>
   )
@@ -55,28 +53,22 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: MAX_WIDTH_CONTAINER,
     marginTop: theme.spacing(32),
     '@media only screen and (max-width: 700px)': {
-      marginTop: theme.spacing(20),
+      marginTop: theme.spacing(16),
     },
   },
   textBlock: {
     maxWidth: MAX_WIDTH_TEXT,
     textAlign: 'center',
-    display: 'flex',
-    alignItems: 'center',
-    flexDirection: 'column',
-    '@media only screen and (max-width: 700px)': {
-      marginLeft: theme.spacing(6),
-      marginRight: theme.spacing(6),
-    },
   },
   firstItem: {
     alignSelf: 'center',
   },
   textColor: {
     color: theme.palette.primary.main,
+    marginBottom: theme.spacing(8),
   },
   imgStyle: {
-    marginTop: theme.spacing(20),
+    marginTop: theme.spacing(10),
     maxWidth: '100%',
     width: '100%',
     '@media only screen and (max-width: 700px)': {
@@ -93,8 +85,6 @@ const useStyles = makeStyles((theme) => ({
   },
   textBold: {
     fontWeight: 400,
-    '@media only screen and (max-width: 965px)': {
-      maxWidth: 880,
-    },
+    marginBottom: theme.spacing(14),
   },
 }))

@@ -23,7 +23,7 @@ export const uiTheme = createTheme({
       fontSize: `clamp(0.5rem, 2.5rem, 3rem)`,
       lineHeight: `3.5rem`,
       fontWeight: 700,
-      '@media (max-width:420px)': {
+      '@media (max-width: 645px)': {
         fontSize: '2rem',
         lineHeight: `2.5rem`,
       },
@@ -41,9 +41,9 @@ export const uiTheme = createTheme({
       fontSize: `clamp(0.5rem, 1.5rem, 1.5rem)`,
       lineHeight: '2rem',
       fontWeight: 700,
-      '@media (max-width:420px)': {
+      '@media (max-width: 645px)': {
         fontSize: '1rem',
-        lineHeight: `1.5rem`,
+        lineHeight: '1.5rem',
       },
     },
     subtitle1: {
@@ -82,11 +82,57 @@ export const uiTheme = createTheme({
     MuiLink: {
       root: {
         textDecoration: 'none',
+        underline: 'none',
       },
     },
     MuiTypography: {
       root: {
         textDecoration: 'none',
+      },
+    },
+    MuiButton: {
+      contained: {
+        backgroundColor: 'rgba(249, 115, 22, 1)',
+        color: '#FFFFFF',
+        height: 52,
+        padding: '14px 20px',
+        boxShadow: 'none',
+      },
+    },
+    MuiFormLabel: {
+      root: {
+        color: '#111827',
+        marginBottom: '8px',
+        '&$focused': {
+          color: '#111827',
+          borderColor: '#E5E7EB',
+        },
+      },
+      asterisk: {
+        color: 'rgba(249, 115, 22, 1)',
+      },
+    },
+    MuiOutlinedInput: {
+      root: {
+        '&$notchedOutline': {
+          borderColor: '#E5E7EB !important',
+        },
+      },
+    },
+    MuiCheckbox: {
+      root: {
+        '&$checked': {
+          color: 'rgba(249, 115, 22, 1) !important',
+        },
+      },
+    },
+    MuiAccordion: {
+      root: {
+        boxShadow: 'none',
+        '&:after': {
+          border: '1px solid red',
+          backgroundColor: 'red',
+        },
       },
     },
   },

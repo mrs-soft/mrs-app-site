@@ -1,0 +1,178 @@
+@import "variables";
+@import "header";
+@import "footer";
+@import 'home/home';
+
+$space: 4;
+
+html {
+  box-sizing: border-box;
+  //scroll-behavior: smooth;
+  height: 100%;
+  background: var(--color-background-default);
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: Inter;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+* {
+  font-family: Inter,
+    sans-serif,
+    Roboto,
+    Helvetica Neue,
+    Arial;
+}
+
+button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+p {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+
+  @media screen and (max-width: 645px) {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+
+  @media screen and (max-width: 420px) {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+h5 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+
+  @media screen and (max-width: 645px) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.subtitle1 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../assets/fonts/Inter-Light.tff");
+}
+
+/*плавная загрузка страниц*/
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fade-in {
+  0% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  -webkit-animation: fade-in .5s ease-in-out;
+  /* Safari 4+ */
+  -moz-animation: fade-in .5s ease-in-out;
+  /* Fx 5+ */
+  -o-animation: fade-in .5s ease-in-out;
+  /* Opera 12+ */
+  animation: fade-in .5s ease-in-out;
+  /* IE 10+, Fx 29+ */
+}
+
+.orange_color {
+  color: var(--color-main)
+}
+
+.arrow-img {
+  margin-left: $space * 3px;
+}

@@ -1,0 +1,27 @@
+{% assign text = site.data.texts_app.mainPage %}
+{% assign link = site.data.texts_app.header %}
+
+<section class="products">
+  <div class="products__title">
+    <h4>Наши</h4>
+    <h4 class="orange_color">&nbsp;продукты</h4>
+  </div>
+  {% for product in site.posts %}
+    <div class="products__content">
+        <div class="products__text">
+        <h5 class="products__header">
+          {{ product.postTitle }}
+        </h5>
+        <p>{{ product.postDescription }}</p>
+        <p class="products__registration">
+          {{ product.registration }} <a class="products__link" href="{{ product.registratinLink | relative_url }}"">№... (ссылка на PDF)</a>.
+        </p>
+        <a href="{{ product.url | relative_url }}" class="products__link products__more">
+          {{ link.links.more }}
+          <img src="{{ site.baseurl }}/assets/img/mainPage/arrow.svg" alt="Картинка стрелки" class="arrow-img"/>
+        </a>
+      </div>
+      <img src="{{site.baseurl}}{{product.image }}" alt="" class="products__image"/>
+    </div>
+  {% endfor %}
+</section>

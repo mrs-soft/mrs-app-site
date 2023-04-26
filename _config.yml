@@ -1,0 +1,37 @@
+title: МРС
+email: your-email@example.com
+baseurl: '' # the subpath of your site, e.g. /blog
+url: '' # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username: jekyll
+lang: ru
+
+# # Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+#
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - _config.yml
+  - _site/
+  - node_modules/
+  - src/
+  - package.json
+  - public/
+  - .prettierrc
+  - tsconfig.json
+  - README.md
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

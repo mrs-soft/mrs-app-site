@@ -1,0 +1,78 @@
+@import "variables";
+
+.first {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to top, transparent 50%, var(--color-background-default) 70%),
+  linear-gradient(to right, transparent 98%, var(--color-background-default) 100%),
+  linear-gradient(to left, transparent 98%, var(--color-background-default) 100%),
+  url('../../assets/img/mainPage/background.svg');
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  max-width: 100%;
+  max-height: 1220px;
+
+  @media (max-width: 950px) {
+    width: 92%;
+  }
+
+  @media screen and (max-width: 700px) {
+    background-size: 410px 350px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;
+    max-width: 1200px;
+    margin-top: $space * 32px;
+
+    @media screen and (max-width: 700px) {
+      margin-top: $space * 20px;
+    }
+
+    &__text {
+      max-width: 948px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      // @media only screen and (max-width: 700px) {
+      //   margin-left: $space * 6px;
+      //   margin-right: $space * 6px;
+      // }
+
+      &> :nth-child(3) {
+        margin-bottom: $space * 8px;
+      }
+
+      &> :last-child {
+        font-weight: 400;
+
+        @media screen and (max-width: 965px) {
+          max-width: 880px,
+        }
+      }
+
+    }
+  }
+
+  img {
+    margin-top: $space * 15px;
+    max-width: 100%;
+    width: 100%;
+    @media only screen and (max-width: 700px) {
+      height: 200px;
+      margin-top: $space * 12px;
+    }
+
+    @media screen and (max-width: 965px) {
+      margin-top: $space * 12px;
+      height: 70%;
+    }
+  }
+}

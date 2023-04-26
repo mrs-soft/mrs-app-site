@@ -1,0 +1,17 @@
+{% assign text = site.data.texts_app.header %}
+<header class="header">
+  <div class="header__container">
+    <div class="header-left">
+      <img class="header-logo" src="{{ site.baseurl }}/assets/img/logo.svg" alt="logo"></img>
+      <p class="header-link">МРС</p>
+    </div>
+    <div class="header-right">
+      <a class="header-link" href="{{site.baseurl}}/platform">{{ text.links.mrsPlatrform }}</a>
+      <a class="header-link" href="{{site.baseurl}}">{{ text.links.stroyControl }}</a>
+      <a class="header-link" href="{{site.baseurl}}/about">{{ text.links.aboutUs }}</a>
+    </div>
+    <!-- <button id="burger-btn" class="burger">
+      <span class="burger__line"></span>
+    </button> -->
+  </div>
+</header>

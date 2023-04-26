@@ -1,0 +1,103 @@
+
+.products {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding-top: $space * 32px;
+  background-color: var(--color-background-paper);
+
+  @media screen and (max-width: 700px) {
+      padding-top: $space * 16px,
+    }
+
+  &__title {
+    display: flex;
+      margin-bottom: $space * 16px;
+      flex-direction: row;
+      max-width: 1200px;
+      justify-content: flex-start;
+      width: 100%;
+
+      @media screen and (max-width: 1250px) {
+        margin-left: $space * 10px;
+        margin-right: $space * 10px;
+        width: 91%;
+      }
+
+      @media screen and (max-width: 700px) {
+        margin-bottom: $space * 10px;
+        margin-left: $space * 6px;
+        margin-right: $space * 6px;
+      }
+
+      @media only screen and (max-width: 420px) {
+        margin-left: $space * 4px;
+        margin-right: $space * 4px;
+      }
+  }
+  
+  &__content {
+    margin-bottom: $space * 24px;
+
+    @media only screen and (max-width: 1250px){
+      margin-left: $space * 10px;
+      margin-right: $space * 10px;
+    }
+    
+    @media only screen and (max-width: 700px) {
+      margin-bottom: $space * 12px;
+      margin-left: $space * 6px;
+      margin-right: $space * 6px;
+    }
+
+    @media only screen and (max-width: 420px) {
+      margin-left: $space * 4px;
+      margin-right: $space * 4px;
+    }
+  }
+
+  &__text {
+    max-width: 1000px;
+  }
+
+  &__header {
+    margin-bottom: $space * 4px;
+  }
+
+  &__registration {
+    margin-top: $space * 6px;
+    margin-bottom: $space * 6px;
+  }
+
+  &__link {
+    color: var(--color-main)
+  }
+
+  &__more {
+    display: flex;
+    align-items: center;
+  }
+
+  &__image {
+    margin-top: $space * 10px;
+    max-width: 100%;
+
+    @media screen and (max-width: 965px) {
+        height: 495px;
+      }
+
+    @media only screen and (max-width: 700px) {
+        height: 332px;
+    }
+
+    @media only screen and (max-width: 420px) {
+      height: 210px;
+    }
+  }
+
+  p {
+    max-width: 800px;
+  }
+
+}

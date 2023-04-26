@@ -1,0 +1,106 @@
+@import "variables";
+
+.partners {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-self: center;
+  max-width: 1900px;
+  width: 100%;
+  padding: $space * 33px 0 $space * 24px;
+
+  @media only screen and (max-width: 700px) {
+    padding: $space * 20px 0 $space * 10px;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: $space * 6px,
+  }
+
+  &__card {
+    display: flex;
+    height: 120px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%);
+
+    @media screen and (max-width: 1900px) {
+        width: 1600px;
+    }
+
+    @media screen and (max-width: 1700px) {
+      width: 1400px;
+    }
+
+    @media screen and (max-width: 1500px) {
+      width: 1200px;
+    }
+
+    @media screen and (max-width: 1200px) {
+      width: 1000px;
+    }
+
+    @media only screen and (max-width: 1000px) {
+      width: 700px,
+    }
+
+    @media only screen and (max-width: 700px) {
+      width: 400px,
+    }
+
+  }
+}
+
+@mixin animate($animation, $duration, $method, $times) {
+  animation: $animation $duration $method $times;
+}
+
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+.animation {
+  display: flex;
+  height: 100%;
+  position: relative;
+  margin-left: $space * 16px;
+  animation: 20s linear infinite example;
+  -webkit-animation: 20s linear infinite example;
+
+  // @include keyframes(example) {
+  //     0% {
+  //       transform: translateX(0);
+  //     }
+  //     100% {
+  //       transform: translateX(calc(-250px * 6));
+  //     }
+  //   }
+}
+
+  
+@keyframes example {
+  0% {
+    transform: translateX(0)
+  }
+  100% {
+    transform: translateX(calc(-250px * 6))
+  }
+}
+
+
+@-webkit-keyframes example {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 6));
+  }
+}
+

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ru">
+  {%- include head.html -%}
+  <body>
+    {%- include header.html -%}   
+    <main>
+      <div class="error">
+        <div class="privacy__content">{{ content }}</div>
+      </div>
+    </main> 
+    {%- include footer.html -%}
+  </body>
+  <script src="{{ "/assets/js/script-for-header.js" | prepend: site.baseurl }}"></script>
+</html>

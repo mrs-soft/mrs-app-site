@@ -2,12 +2,14 @@
 @import "header";
 @import "footer";
 @import 'home/home';
+@import 'about/about';
+@import 'privacy/privacy';
+@import 'error/error';
 
 $space: 4;
 
 html {
   box-sizing: border-box;
-  //scroll-behavior: smooth;
   height: 100%;
   background: var(--color-background-default);
 }
@@ -48,8 +50,11 @@ a {
 button {
   border: none;
   padding: 0;
-  background-color: transparent;
+  background-color: var(--color-main);
   cursor: pointer;
+  padding: 14px 20px;
+  border-radius: 5px;
+  color: #fff;
 }
 
 p {
@@ -59,6 +64,18 @@ p {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 120px;
+
+  @media screen and (max-width: 645px) {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
 }
 
 h3 {

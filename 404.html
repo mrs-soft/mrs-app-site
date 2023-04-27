@@ -9,6 +9,15 @@ layout: default
     <h1>{{ text.code }}</h1>
     <h4>{{ text.title }}</h4>
     <h5>{{ text.description }}</h5>
-    <button>{{ buttonText.return }}</button>
+    <button id="btn-return">{{ buttonText.return }}</button>
   </div>
 </div>
+
+<script>
+  const returnBtn = document.getElementById('btn-return')
+
+  returnBtn.addEventListener('click', (e) => {
+    e.preventDefault()
+    window.location.href = '/'
+  })
+</script>

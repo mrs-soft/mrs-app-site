@@ -1,6 +1,7 @@
 @import "variables";
 @import "header";
 @import "footer";
+@import "mobile-menu";
 @import 'home/home';
 @import 'about/about';
 @import 'privacy/privacy';
@@ -20,7 +21,7 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
 }
 
 *,
@@ -40,11 +41,7 @@ a {
 }
 
 * {
-  font-family: Inter,
-    sans-serif,
-    Roboto,
-    Helvetica Neue,
-    Arial;
+  font-family: 'Inter', sans-serif;
 }
 
 button {
@@ -72,7 +69,7 @@ h1 {
   font-size: 96px;
   line-height: 120px;
 
-  @media screen and (max-width: 645px) {
+  @media screen and (max-width: 700px) {
     font-size: 4rem;
     line-height: 4.5rem;
   }
@@ -84,7 +81,7 @@ h3 {
   font-size: 48px;
   line-height: 56px;
 
-  @media screen and (max-width: 645px) {
+  @media screen and (max-width: 700px) {
     font-size: 2rem;
     line-height: 2.5rem;
   }
@@ -96,7 +93,7 @@ h4 {
   font-size: 32px;
   line-height: 40px;
 
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 700px) {
     font-size: 1.5rem;
     line-height: 2rem;
   }
@@ -108,7 +105,7 @@ h5 {
   font-size: 24px;
   line-height: 32px;
 
-  @media screen and (max-width: 645px) {
+  @media screen and (max-width: 700px) {
     font-size: 1rem;
     line-height: 1.5rem;
   }
@@ -127,11 +124,6 @@ main {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-}
-
-@font-face {
-  font-family: Inter;
-  src: url("../assets/fonts/Inter-Light.tff");
 }
 
 /*плавная загрузка страниц*/

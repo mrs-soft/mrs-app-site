@@ -1,0 +1,26 @@
+{% assign text = site.data.texts_app.mobileMenu %}
+<div id="mobile-menu"" class="mobile-menu">
+    <div class="mobile-menu__header">
+        <a href="{{site.baseurl}}/">
+          <div class="header-left">
+            <img class="header-logo" src="{{ site.baseurl }}/assets/img/logo.svg" alt="logo"></img>
+            <p class="header-link">МРС</p>
+          </div>
+        </a>
+        <span id="mobile-menu__close" class="mobile-menu__close">  
+          <img class="header-logo" src="{{ site.baseurl }}/assets/img/close.svg" alt="logo"></img>
+        </span>
+    </div>
+    
+    <div class="mobile-menu__items">
+        <nav class="mobile-menu__item">
+            <a class="mobile-menu__item-link" href="{{site.baseurl}}/mrs">{{ text.mrsPlatrform }}</a>
+        </nav>
+        <nav class="mobile-menu__item">
+            <a class="mobile-menu__item-link" href="{{site.baseurl}}/sk">{{ text.stroyControl }}</a>
+        </nav>
+         <nav class="mobile-menu__item">
+            <a class="mobile-menu__item-link" href="{{site.baseurl}}/about">{{ text.aboutUs }}</a>
+        </nav>
+    </div>
+</div>

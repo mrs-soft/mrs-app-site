@@ -1,0 +1,55 @@
+{% assign text = site.data.texts_app.mrsPage.priceBlock %} {% assign btnText = site.data.texts_app.button %}
+<section class="price">
+  <div class="price__container">
+    <div class="price__container__text">
+      <h4 class="orange_color">Цены</h4>
+      <h4>&nbsp;и тарифы</h4>
+    </div>
+    <p>{{ text.description }}</p>
+  </div>
+  <form id="form-feedback">
+    <label for="name">Имя:</label>
+    <input
+      type="text"
+      id="feedback-name"
+      class="feedback-form__input"
+      name="name"
+      required
+      placeholder="Введите ваше имя"
+    />
+    <!-- <label id="feedback-name-error">ewrfwerf</label> -->
+    <label for="email">E-mail:</label>
+    <input
+      type="email"
+      id="feedback-email"
+      name="email"
+      class="feedback-form__input"
+      required
+      placeholder="Введите e-mail"
+    />
+    <!-- <label id="feedback-email-error">rrrrrr</label> -->
+    <label for="telephone">Номер телефона:</label>
+    <input
+      type="tel"
+      id="feedback-telephone"
+      name="telephone"
+      class="feedback-form__input"
+      minlength="8"
+      required
+      placeholder="Введите номер телефона"
+    />
+    <!-- <label id="feedback-telephone-error">wwwwww</label> -->
+    <div>
+      <input type="checkbox" id="feedback-checkbox" name="checkbox" class="feedback-form__input" required />
+      <label for="checkbox">Согласен с политикой конфиденциальности</label>
+    </div>
+    <button type="submit" id="feedback-submit">
+      {{ btnText.placeOrder }}
+      <img src="{{ site.baseurl }}/assets/img/platformPage/arrowWhite.svg" alt="Картинка стрелки" class="arrow-img" />
+    </button>
+  </form>
+
+  <!-- <div class="feedback-form-message">
+    <h3 class="feedback-form-message__text h3"></h3>
+  </div> -->
+</section>

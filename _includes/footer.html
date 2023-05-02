@@ -13,18 +13,20 @@
       </div>
       <div class="footer__top__right">
         <div class="footer__right">
+          <p>{{ footerText.title.platform }}</p>
+          <a href="{{site.baseurl}}/mrs" class="header-link"> {{ footerText.title.aboutPlatform }} </a>
+          <a href="{{site.baseurl}}" class="header-link"> {{ footerText.title.functional }} </a>
+          <a href="{{site.baseurl}}" class="header-link"> {{ footerText.title.developers }} </a>
+        </div>
+        <div class="footer__right">
           <p>{{ footerText.title.products }}</p>
-          <a href="{{site.baseurl}}/mrs" class="header-link"> {{ text.links.mrsPlatrform }} </a>
           <a href="{{site.baseurl}}/sk" class="header-link">{{ text.links.stroyControl }}</a>
         </div>
         <div class="footer__right">
-          <p>{{ footerText.title.company }}</p>
-          <a href="{{site.baseurl}}/about" class="header-link"> {{ text.links.aboutUs }} </a>
-        </div>
-        <div class="footer__right">
           <p>{{ footerText.title.resources }}</p>
-          <a href="{{site.baseurl}}" class="header-link"> {{ footerText.title.documents }} </a>
-          <a href="{{site.baseurl}}" class="header-link"> {{ footerText.title.developers }} </a>
+          <a href="{{site.baseurl}}/about" class="header-link"> {{ text.links.aboutUs }} </a>
+          <!-- <a href="{{site.baseurl}}" class="header-link"> {{ footerText.title.documents }} </a>
+          <a href="{{site.baseurl}}" class="header-link"> {{ footerText.title.developers }} </a> -->
         </div>
       </div>
     </div>

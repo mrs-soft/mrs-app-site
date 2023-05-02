@@ -1,0 +1,27 @@
+{% assign text = site.data.texts_app.mrsPage.questionsBlock %} {% assign link = site.data.texts_app.header %}
+
+<section class="questions">
+  <div class="questions__title">
+    <h4 class="orange_color">Ответы</h4>
+    <h4>&nbsp; на вопросы</h4>
+  </div>
+  <div class="questions__content">
+    <div class="questions__content__text">
+      <div class="questions__content__accordion">
+        <p class="subtitle1 questions__content__header">{{ text.first.title }}</p>
+        <img class="close" src="{{ site.baseurl }}/assets/img/close.svg" alt="Картинка закрытия" />
+        <img class="open" src="{{ site.baseurl }}/assets/img/add.svg" alt="Картинка открытия" />
+      </div>
+      <p class="questions__content__description">{{ text.first.description}}</p>
+      <div class="divider"></div>
+    </div>
+    <div class="questions__content__text">
+      <div class="questions__content__accordion">
+        <p class="subtitle1 questions__content__header">{{ text.second.title }}</p>
+        <img class="close" src="{{ site.baseurl }}/assets/img/close.svg" alt="Картинка закрытия" />
+        <img class="open" src="{{ site.baseurl }}/assets/img/add.svg" alt="Картинка открытия" />
+      </div>
+      <p class="questions__content__description">{{ text.second.description}}</p>
+    </div>
+  </div>
+</section>

@@ -16,6 +16,7 @@
 
   @media screen and (max-width: 1200px) {
     width: 90%;
+    margin: 0 auto;
   }
 
   @media screen and (max-width: 965px) {
@@ -30,6 +31,7 @@
 
   &__container {
     max-width: 610px;
+    text-align: center;
 
 
     &__text {
@@ -86,15 +88,10 @@
   label {
     margin-bottom: $space * 2px;
     align-self: flex-start;
+    display: flex;
+    flex-direction: row;
   }
 
-  input {
-    width: 100%;
-    border: 1px solid var(--color-background-divider);
-    border-radius: 5px;
-    padding: 14px 16px;
-    margin-bottom: $space * 6px;
-  }
   button {
       width: 100%;
       display: flex;

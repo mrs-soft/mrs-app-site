@@ -8,7 +8,7 @@
   width: 100%;
   padding: $space * 33px 0 $space * 24px;
 
-  @media only screen and (max-width: 700px) {
+  @media screen and (max-width: 700px) {
     padding: $space * 20px 0 $space * 10px;
   }
 

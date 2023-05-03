@@ -27,7 +27,7 @@ const formInputs = document.querySelectorAll(".feedback-form__input");
 // emailInput.addEventListener("change", validateEmail);
 // phoneInput.addEventListener("change", validatePhone);
 
-feedbackForm.addEventListener("submit", async function (e) {
+feedbackForm?.addEventListener("submit", async function (e) {
   e.preventDefault();
 
   if (!validateForm()) return
@@ -74,7 +74,6 @@ function sendMail(payload) {
     template_params: payload,
   };
 
-  console.log(data, 'data')
 
   return (
     { status: 200 }

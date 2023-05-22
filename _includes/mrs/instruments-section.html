@@ -1,0 +1,27 @@
+{% assign text = site.data.mrs_page %}
+<section class="instrumentals">
+  <div class="instrumentals__container">
+    <div class="instrumentals__container__logo">
+      <img
+        class="instrumentals__container__logo__img"
+        src="{{ site.baseurl }}/assets/img/platformPage/number.svg"
+        alt="number-img"
+      />
+    </div>
+    <div class="instrumentals__container__text">
+      <div class="instrumentals__container__text__title">
+        <div class="instrumentals__container__text__title__first">
+          <h4>Используйте</h4>
+          <h4 class="orange_color">&nbsp;привычные</h4>
+        </div>
+        <h4>&nbsp;инструменты для разработки</h4>
+      </div>
+      <p>{{ text.instrumentsBlock.description }}</p>
+    </div>
+    <img
+      src="{{ site.baseurl }}/assets/img/platformPage/instruments.svg"
+      alt="instrumental-image"
+      style="max-width: 544px"
+    />
+  </div>
+</section>

@@ -1,0 +1,18 @@
+{% assign text = site.data.mrs_page %} {% assign btnText = site.data.texts_app.button %}
+<section class="integration">
+  <div class="integration__container">
+    <img
+      class="integration__container__img"
+      src="{{ site.baseurl }}/assets/img/platformPage/integration.svg"
+      alt="second-image"
+    />
+    <div class="integration__container__text">
+      <div class="integration__container__text__title">
+        <h4>Интегрируйтесь</h4>
+        <h4 class="orange_color">&nbsp;c вашим IT-контуром</h4>
+      </div>
+      <p>{{ text.integrationBlock.description }}</p>
+    </div>
+    <button>{{ btnText.startIntegration }}</button>
+  </div>
+</section>

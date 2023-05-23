@@ -1,0 +1,23 @@
+{% assign text = site.data.mrs_page %}
+<section class="storage">
+  <div class="storage__container">
+    <img
+      class="storage__container__logo"
+      src="{{ site.baseurl }}/assets/img/platformPage/storageSvg.svg"
+      alt="storage-logo"
+    />
+    <div class="storage__container__text">
+      <h4>Храните данные</h4>
+      <h4 class="orange_color">&nbsp;в надежном месте</h4>
+    </div>
+    <div class="card">
+      {% for item in text.storageBlock %}
+      <div class="card__item">
+        <img class="card__item__img" src="{{ site.baseurl }}{{item.url}}" alt="card-logo" />
+        <h6>{{item.title}}</h6>
+        <p>{{item.description}}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

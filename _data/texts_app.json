@@ -35,6 +35,7 @@
   "button": {
     "return": "Вернуться на главную",
     "moreIntegration": "Узнать больше об интеграции",
-    "placeOrder": "Оформить заявку"
+    "placeOrder": "Оформить заявку",
+    "startIntegration": "Начать интеграцию"
   }
 }

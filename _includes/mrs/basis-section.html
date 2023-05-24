@@ -1,0 +1,29 @@
+{% assign text = site.data.mrs_page %}
+<section class="basis">
+  <div class="basis__container">
+    <img
+      class="basis__container__logo"
+      src="{{ site.baseurl }}/assets/img/platformPage/rusProduct.svg"
+      alt="basis-logo"
+    />
+    <div class="basis__container__text">
+      <div class="basis__container__text__title">
+        <h4>Используйте</h4>
+        <h4 class="orange_color">&nbsp;российский продукт</h4>
+      </div>
+      <p>
+        Платформа разработана с применением свободно распространяемых библиотеки компонентов, без использования
+        платного, зарубежного ПО.
+      </p>
+    </div>
+    <div class="card">
+      {% for item in text.rusProductBlock %}
+      <div class="card__item">
+        <img class="card__item__img" src="{{ site.baseurl }}{{item.url}}" alt="card-logo" />
+        <h6>{{item.title}}</h6>
+        <p>{{item.description}}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

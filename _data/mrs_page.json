@@ -8,12 +8,29 @@
     {
       "title": "Cloud",
       "description": "Мы развернем Платформу для вас на нашем сервере.",
-      "url": "/assets/img/platformPage/cards/cloud.svg"
+      "url": "/assets/img/platformPage/cards/status.svg"
     },
     {
       "title": "Self-Hosted",
       "description": "Вы можете сами развернуть на своем сервере.",
       "url": "/assets/img/platformPage/cards/selfHosted.svg"
+    }
+  ],
+  "rusProductBlock": [
+    {
+      "title": "Проверенные IT-решения",
+      "description": "Платформа зарегистрирована в реестре отечественного ПО.",
+      "url": "/assets/img/platformPage/cards/cloud.svg"
+    },
+    {
+      "title": "Безопасная архитектура",
+      "description": "Архитектуры соответствует требованиям 152 ФЗ «О персональных данных».",
+      "url": "/assets/img/platformPage/cards/safety.svg"
+    },
+    {
+      "title": "Надежный партнер",
+      "description": "МРС – российский разработчик цифровых продуктов с 2015 года.",
+      "url": "/assets/img/platformPage/cards/goodPartner.svg"
     }
   ],
   "integrationBlock": {

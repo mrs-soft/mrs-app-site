@@ -1,0 +1,17 @@
+{% assign text = site.data.mrs_page %} {% assign btnText = site.data.texts_app.button %}
+<section class="result">
+  <div class="result__container">
+    <img
+      class="result__container__img"
+      src="{{ site.baseurl }}/assets/img/platformPage/resultSvg.svg"
+      alt="second-image"
+    />
+    <div class="result__container__text">
+      <div class="result__container__text__title">
+        <h4>&nbsp;Результат разработки —</h4>
+        <h4 class="orange_color">&nbsp;ваш актив</h4>
+      </div>
+      <p>{{ text.resultBlock.description }}</p>
+    </div>
+  </div>
+</section>

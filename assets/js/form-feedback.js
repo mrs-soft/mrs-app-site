@@ -18,14 +18,17 @@ const feedbackSubmit = document.getElementById("feedback-submit");
 
 const formInputs = document.querySelectorAll(".feedback-form__input");
 
-// //on change input
-// for (let i = 0; i < formInputs.length; i++) {
-//   formInputs[i].addEventListener("change", validateForm);
-// }
+//on change input
+for (let i = 0; i < formInputs.length; i++) {
+  formInputs[i].addEventListener("change", validateForm);
+
+}
 
 // nameInput.addEventListener("change", validateName);
 // emailInput.addEventListener("change", validateEmail);
 // phoneInput.addEventListener("change", validatePhone);
+
+feedbackSubmit.setAttribute('disabled', '');
 
 feedbackForm?.addEventListener("submit", async function (e) {
   e.preventDefault();
@@ -60,6 +63,8 @@ feedbackForm?.addEventListener("submit", async function (e) {
     phoneInput.value = "";
     emailInput.value = "";
     checkboxInput.checked = false;
+
+    feedbackSubmit.disabled = true;
   } else {
     // formMessageTextEl.innerText = textError;
   }
@@ -97,6 +102,7 @@ function sendMail(payload) {
 
 function validateForm() {
   if (nameInput.value !== "" && phoneInput.value.length > 8 && validateEmail(emailInput.value) && checkboxInput.checked) {
+    feedbackSubmit.disabled = false;
     return true
   } else {
     return false

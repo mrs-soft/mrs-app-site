@@ -11,18 +11,18 @@
         <h4>Для сбора данных</h4>
         <h4 class="orange_color">&nbsp;оцифруйте процессы</h4>
       </div>
-      <p class="body1">{{ text.digitizingBlock.description }}</p>
+      <p class="body1">Создавайте приложения из элементов Платформы, оставляющие цифровой след.</p>
     </div>
-    <div class="digitizing__container__cards">
-      <img
-        src="{{ site.baseurl }}/assets/img/platformPage/cards/digitizing/autorization.svg"
-        alt="autorization-image"
-      />
-      <img src="{{ site.baseurl }}/assets/img/platformPage/cards/digitizing/interface.svg" alt="interface-image" />
-      <img src="{{ site.baseurl }}/assets/img/platformPage/cards/digitizing/model.svg" alt="model-image" />
-      <img src="{{ site.baseurl }}/assets/img/platformPage/cards/digitizing/direction.svg" alt="direction-image" />
-      <img src="{{ site.baseurl }}/assets/img/platformPage/cards/digitizing/document.svg" alt="document-image" />
-      <img src="{{ site.baseurl }}/assets/img/platformPage/cards/digitizing/analytics.svg" alt="analytics-image" />
+    <div class="digitizing__card">
+      {% for item in text.digitizingBlock %}
+      <div class="digitizing__card__item">
+        <div class="digitizing__card__item__text">
+          <h6>{{item.title}}</h6>
+          <p>{{item.description}}</p>
+        </div>
+        <img class="digitizing__card__item__img" src="{{ site.baseurl }}{{item.url}}" alt="card-image" />
+      </div>
+      {% endfor %}
     </div>
   </div>
 </section>

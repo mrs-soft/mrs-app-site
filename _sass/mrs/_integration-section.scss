@@ -64,6 +64,8 @@
   }
 
   button {
-    margin-top: $space * 16px;
+    margin-top: $space * 10px;
+    display: flex;
+    align-items: center;
   }
 }

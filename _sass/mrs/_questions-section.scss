@@ -44,6 +44,11 @@
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.2s ease-out;
+
+      a {
+        color: var(--color-main);
+        text-decoration: underline;
+      }
     }
 
     &__accordion {

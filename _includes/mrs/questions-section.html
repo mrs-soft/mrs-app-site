@@ -12,7 +12,9 @@
         <img class="close" src="{{ site.baseurl }}/assets/img/close.svg" alt="Картинка закрытия" />
         <img class="open" src="{{ site.baseurl }}/assets/img/add.svg" alt="Картинка открытия" />
       </div>
-      <p class="questions__content__description">{{ text.first.description}}</p>
+      <p class="questions__content__description">
+        {{ text.first.description}} <a href="{{text.first.link}}" target="_blank">&nbsp;{{ text.first.textLink}}</a>
+      </p>
       <div class="divider"></div>
     </div>
     <div class="questions__content__text">
@@ -21,7 +23,10 @@
         <img class="close" src="{{ site.baseurl }}/assets/img/close.svg" alt="Картинка закрытия" />
         <img class="open" src="{{ site.baseurl }}/assets/img/add.svg" alt="Картинка открытия" />
       </div>
-      <p class="questions__content__description">{{ text.second.description}}</p>
+      <p class="questions__content__description">
+        {{ text.second.description}}
+        <a href="{{text.second.link}}" target="_blank">&nbsp;{{ text.second.textLink}}</a>
+      </p>
     </div>
   </div>
 </section>

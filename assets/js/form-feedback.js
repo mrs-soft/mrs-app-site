@@ -11,8 +11,14 @@ const emailErrorInput = document.getElementById("feedback-email-error");
 
 const checkboxInput = document.getElementById("feedback-checkbox");
 
+const btnFirstSection = document.getElementById("first-section-btn");
+const btnIntegrationSection = document.getElementById("integration-section-btn");
+
 // const formMessageEl = document.querySelector(".feedback-form-message");
 // const formMessageTextEl = document.querySelector(".feedback-form-message__text");
+
+btnFirstSection.addEventListener("click", scrollFunction)
+btnIntegrationSection.addEventListener("click", scrollFunction)
 
 const feedbackSubmit = document.getElementById("feedback-submit");
 
@@ -131,4 +137,9 @@ function validateName() {
 
 function validatePhone() {
   phoneInput.value = phoneInput.value.replace(/[^0-9-]/g, '')
+}
+
+function scrollFunction() {
+  const element = document.querySelector(".price");
+  element.scrollIntoView();
 }

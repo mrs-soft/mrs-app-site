@@ -12,7 +12,7 @@
       linear-gradient(to left, transparent 50%, var(--color-background-default) 100%),
       url('../../assets/img/mainPage/background.svg');
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
 
   @media screen and (max-width: 1200px) {
     width: 90%;

@@ -48,17 +48,25 @@
       placeholder="Введите номер телефона"
     />
     <!-- <label id="feedback-telephone-error">wwwwww</label> -->
-    <div>
+    <!-- <div>
       <input type="checkbox" id="feedback-checkbox" name="checkbox" class="feedback-form__input" required />
       <label for="feedback-checkbox">Согласен с политикой конфиденциальности</label>
-    </div>
+    </div> -->
     <button type="submit" id="feedback-submit">
       {{ btnText.placeOrder }}
       <img src="{{ site.baseurl }}/assets/img/platformPage/arrowWhite.svg" alt="Картинка стрелки" class="arrow-img" />
     </button>
+    <div class="price__personal__text">
+      <p>Отправляя запрос, вы даете согласие на обработку персональных данных.</p>
+    </div>
   </form>
 
-  <!-- <div class="feedback-form-message">
-    <h3 class="feedback-form-message__text h3"></h3>
-  </div> -->
+  <div class="feedback-form-message">
+    <div class="feedback-form-message__container">
+      <div class="feedback-form-message__header">
+        <img class="close-modal" src="{{ site.baseurl }}/assets/img/close.svg" alt="Картинка закрытия" />
+      </div>
+      <p class="feedback-form-message__text"></p>
+    </div>
+  </div>
 </section>

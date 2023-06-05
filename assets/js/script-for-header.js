@@ -45,6 +45,22 @@ window.addEventListener("scroll", () => {
   document.documentElement.style.setProperty("--scroll-y", `${window.scrollY}px`);
 });
 
+//Выделение ссылок
+
+const headerLink = document.querySelectorAll(".header-link");
+let j
+
+for (j = 0; j < headerLink.length; j++) {
+  if (window.location.href === headerLink[j]?.href) {
+    headerLink[j]?.classList.add("orange_color")
+  } else {
+    headerLink[j]?.classList.remove("orange_color")
+  }
+
+}
+
+
+
 
 
 

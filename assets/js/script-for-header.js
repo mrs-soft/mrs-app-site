@@ -30,7 +30,6 @@ burgerBtn.addEventListener("click", (e) => {
 
 //close mobile menu
 document.getElementById("mobile-menu__close").addEventListener("click", (e) => {
-  console.log("dd");
   e.stopPropagation();
   if (e.target !== mobileMenu) {
     mobileMenu.classList.remove("active");

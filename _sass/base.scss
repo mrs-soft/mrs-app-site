@@ -266,6 +266,11 @@ input[type="checkbox"]:checked {
     }
   }
 
+  &__link {
+   color: var(--color-secondary);
+   text-decoration: underline;
+  }
+
   h6 {
     margin-bottom: $space * 2px;
   }

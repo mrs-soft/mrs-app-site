@@ -56,7 +56,13 @@
   }
 
   &__header {
-    margin-bottom: $space * 4px;
+    margin-bottom: $space * 6px;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: $space * 6px;
   }
 
   &__registration {
@@ -70,12 +76,14 @@
   }
 
   &__link {
-    color: var(--color-main)
+    text-decoration: underline;
   }
 
   &__more {
     display: flex;
     align-items: center;
+    color: var(--color-main);
+    text-decoration: none;
   }
 
   &__image {

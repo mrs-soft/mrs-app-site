@@ -54,7 +54,7 @@
   "rusProductBlock": [
     {
       "title": "Отечественное ПО",
-      "description": "Запись в реестре Минцифры РФ от 24 марта 2023 №17113",
+      "description": "Запись в реестре Минцифры РФ <a class='card__link' href='https://reestr.digital.gov.ru/reestr/1393438/' target='_blank'>от 24 марта 2023 №17113</a>",
       "url": "/assets/img/platformPage/cards/cloud.svg"
     },
     {

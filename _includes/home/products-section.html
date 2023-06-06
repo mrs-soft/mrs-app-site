@@ -11,10 +11,12 @@
         <h5 class="products__header">
           {{ product.postTitle }}
         </h5>
-        <p>{{ product.postDescription }}</p>
-        <p class="products__registration">
-          {{ product.registration }} <a class="products__link" href="{{ product.registratinLink | relative_url }}"">отечественного ПО</a>
-        </p>
+        <div class="products__description">
+          <p>{{ product.postDescriptionStart }}
+            <a class="products__link" href="{{ product.registratinLink | relative_url }}"" target="_blank">{{ product.registration }}</a>
+            , {{ product.postDescriptionEnd }}
+          </p>
+        </div>
         <a href="{{ product.url | relative_url }}" class="products__link products__more">
           {{ link.links.more }}
           <img src="{{ site.baseurl }}/assets/img/mainPage/arrow.svg" alt="Картинка стрелки" class="arrow-img"/>

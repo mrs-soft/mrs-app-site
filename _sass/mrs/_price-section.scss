@@ -167,6 +167,10 @@
 
 #feedback-name-error, #feedback-email-error, #feedback-telephone-error {
   display: none;
+  color: var(--color-error);
+  align-self: flex-start;
+  font-size: 12px;
+  margin-top: -20px;
 }
 
 #feedback-submit {

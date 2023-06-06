@@ -27,13 +27,20 @@ const formInputs = document.querySelectorAll(".feedback-form__input");
 
 //on change input
 for (let i = 0; i < formInputs.length; i++) {
-  formInputs[i]?.addEventListener("change", validateForm);
+  formInputs[i]?.addEventListener("blur", validateForm);
 
 }
 
 // nameInput.addEventListener("change", validateName);
-// emailInput.addEventListener("change", validateEmail);
-// phoneInput.addEventListener("change", validatePhone);
+emailInput.addEventListener("input", () => {
+  emailInput.style.borderColor = "#E5E7EB"
+  emailErrorInput.style.display = "none";
+});
+
+phoneInput.addEventListener("input", () => {
+  phoneInput.style.borderColor = "#E5E7EB"
+  phoneErrorInput.style.display = "none";
+});
 
 feedbackSubmit?.setAttribute('disabled', '');
 
@@ -113,20 +120,27 @@ function sendMail(payload) {
 }
 
 function validateForm() {
-  if (nameInput.value !== "" && phoneInput.value.length > 8 && validateEmail(emailInput.value)) {
+  const isValidPhone = validatePhone()
+  const isValidEmail = validateEmail()
+  const isValidName = nameInput.value !== ""
+
+  if (isValidPhone && isValidName && isValidEmail) {
     feedbackSubmit.disabled = false;
     return true
   } else {
+    feedbackSubmit.disabled = true;
     return false
   }
 }
 
 function validateEmail() {
+  if (emailInput.value === "") return
   const isValid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailInput.value)
 
-  // if (!isValid) {
-  //   emailErrorInput.style.display = "flex";
-  // } else emailErrorInput.style.display = "none";
+  if (!isValid) {
+    emailErrorInput.style.display = "flex";
+    emailInput.style.borderColor = "#EF4444"
+  }
 
   return isValid
 }
@@ -142,7 +156,17 @@ function validateName() {
 }
 
 function validatePhone() {
+  if (phoneInput.value === "") return
   phoneInput.value = phoneInput.value.replace(/[^0-9-]/g, '')
+
+  const isValidPhone = phoneInput.value.length > 8
+
+  if (!isValidPhone) {
+    phoneErrorInput.style.display = "flex";
+    phoneInput.style.borderColor = "#EF4444"
+  }
+
+  return isValidPhone
 }
 
 function scrollFunction() {

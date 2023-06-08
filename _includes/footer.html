@@ -14,19 +14,21 @@
       <div class="footer__top__right">
         <div class="footer__right">
           <p>{{ footerText.title.platform }}</p>
-          <a href="{{site.baseurl}}/platform" class="header-link"> {{ footerText.title.aboutPlatform }} </a>
-          <!-- <a href="{{site.baseurl}}" class="header-link"> {{ footerText.title.functional }} </a> -->
-          <a href="{{site.baseurl}}" class="header-link"> {{ footerText.title.developers }} </a>
+          <a href="{{site.baseurl}}/platform" class="footer-link"> {{ footerText.title.aboutPlatform }} </a>
+          <!-- <a href="{{site.baseurl}}" class="footer-link"> {{ footerText.title.functional }} </a> -->
+          <a href="https://developers.mrspro.ru/" target="_blank" class="footer-link">
+            {{ footerText.title.developers }}
+          </a>
         </div>
         <!-- <div class="footer__right">
           <p>{{ footerText.title.products }}</p>
-          <a href="{{site.baseurl}}/sk" class="header-link">{{ text.links.stroyControl }}</a>
+          <a href="{{site.baseurl}}/sk" class="footer-link">{{ text.links.stroyControl }}</a>
         </div> -->
         <div class="footer__right">
           <p>{{ footerText.title.resources }}</p>
-          <a href="{{site.baseurl}}/about" class="header-link"> {{ text.links.aboutUs }} </a>
-          <!-- <a href="{{site.baseurl}}" class="header-link"> {{ footerText.title.documents }} </a>
-          <a href="{{site.baseurl}}" class="header-link"> {{ footerText.title.developers }} </a> -->
+          <a href="{{site.baseurl}}/about" class="footer-link"> {{ text.links.aboutUs }} </a>
+          <!-- <a href="{{site.baseurl}}" class="footer-link"> {{ footerText.title.documents }} </a>
+          <a href="{{site.baseurl}}" class="footer-link"> {{ footerText.title.developers }} </a> -->
         </div>
       </div>
     </div>
@@ -34,7 +36,9 @@
     <div class="footer__bottom">
       <p>{{ footerText.title.ooo }}</p>
       <div class="divider_vertical"></div>
-      <a href="{{site.baseurl}}/privacy" class="header-link"> {{ footerText.title.privacyPolicy }} </a>
+      <a href="{{site.baseurl}}/privacy" class="footer-link"> {{ footerText.title.privacyPolicy }} </a>
+      <div class="divider_vertical"></div>
+      <a href="{{site.baseurl}}/policy" class="footer-link"> {{ footerText.title.policy }} </a>
     </div>
   </div>
 </footer>

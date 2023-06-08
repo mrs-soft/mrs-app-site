@@ -55,6 +55,11 @@
     display: flex;
     align-items: flex-start;
 
+    &__link {
+        text-decoration: underline;
+        color: var(--color-secondary)
+      }
+
     p {
       font-weight: 400;
       font-size: 12px;

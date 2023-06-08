@@ -2,8 +2,7 @@
 
 <section class="products">
   <div class="products__title">
-    <h4>Наши</h4>
-    <h4 class="orange_color">&nbsp;продукты</h4>
+    <h4>Наши<span class="orange_color">&nbsp;продукты</span></h4>
   </div>
   {% for product in site.posts %}
     <div class="products__content">
@@ -19,10 +18,10 @@
         </div>
         <a href="{{ product.url | relative_url }}" class="products__link products__more">
           {{ link.links.more }}
-          <img src="{{ site.baseurl }}/assets/img/mainPage/arrow.svg" alt="Картинка стрелки" class="arrow-img"/>
+          <img src="{{ site.baseurl }}/assets/img/mainPage/arrow.svg" alt="Картинка стрелки" class="arrow-img">
         </a>
       </div>
-      <img src="{{site.baseurl}}{{product.image }}" alt="product-image" class="products__image"/>
+      <img src="{{site.baseurl}}{{product.image }}" alt="product-image" class="products__image">
     </div>
   {% endfor %}
 </section>

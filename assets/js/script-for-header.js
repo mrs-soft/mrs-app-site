@@ -4,6 +4,8 @@ const pageAbout = document.querySelector(".about");
 const pagePrivacy = document.querySelector(".privacy");
 const pageError = document.querySelector(".error");
 
+const firstSection = document.querySelector(".first");
+
 const header = document.querySelector(".header");
 const footer = document.querySelector(".footer");
 
@@ -14,7 +16,6 @@ if (pageAbout || pagePrivacy || pageError) {
 }
 
 // Боковое меню
-
 const burgerBtn = document.getElementById("burger-btn");
 const mobileMenu = document.getElementById("mobile-menu");
 
@@ -40,22 +41,42 @@ document.getElementById("mobile-menu__close").addEventListener("click", (e) => {
   }
 });
 
-window.addEventListener("scroll", () => {
+document.addEventListener("scroll", () => {
   document.documentElement.style.setProperty("--scroll-y", `${window.scrollY}px`);
+
+  if (!isInViewport(firstSection)) {
+    header.style.backgroundColor = '#FFFF'
+  } else {
+    header.style.backgroundColor = ''
+  }
+
+
+  if (document.documentElement?.scrollTop > 1) {
+    header?.classList.add('header__fixed');
+  } else {
+    header?.classList.remove('header__fixed');
+  }
+
 });
 
 //Выделение ссылок
 
-const headerLink = document.querySelectorAll(".header-link");
-let j
+// const headerLink = document.querySelectorAll(".header-link");
+// let j
 
-for (j = 0; j < headerLink.length; j++) {
-  if (window.location.href === headerLink[j]?.href) {
-    headerLink[j]?.classList.add("orange_color")
-  } else {
-    headerLink[j]?.classList.remove("orange_color")
-  }
+// for (j = 0; j < headerLink.length; j++) {
+//   if (window.location.href === headerLink[j]?.href) {
+//     headerLink[j]?.classList.add("orange_color")
+//   } else {
+//     headerLink[j]?.classList.remove("orange_color")
+//   }
 
+// }
+
+function isInViewport(element) {
+  if (!element) return
+  const rect = element.getBoundingClientRect();
+  return rect.top >= -rect.height
 }
 
 

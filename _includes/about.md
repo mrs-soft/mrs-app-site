@@ -27,10 +27,10 @@
 Генеральный директор Шалагин Павел Сергеевич
 
 **Почта**  
-enquiry@mrsapp.ru
+<a class="text-underline">enquiry@mrsapp.ru</a>
 
 **Телефон**  
-8 (800) 500-13-25
+<a class="text-underline">8 (800) 500-13-25</a>
 
 ##### Виды деятельности
 

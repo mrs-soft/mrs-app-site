@@ -28,10 +28,16 @@
     &__img {
       margin-top: 0 !important;
       margin-bottom: $space * 8px;
+      max-width: 600px;
+      max-height: 362px;
 
       @media (max-width: 650px) {
         width: 82%;
       }
+    }
+
+    &__logo {
+      margin-top: -70px;
     }
 
     &__text {

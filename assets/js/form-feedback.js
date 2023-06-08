@@ -32,12 +32,12 @@ for (let i = 0; i < formInputs.length; i++) {
 }
 
 // nameInput.addEventListener("change", validateName);
-emailInput.addEventListener("input", () => {
+emailInput?.addEventListener("input", () => {
   emailInput.style.borderColor = "#E5E7EB"
   emailErrorInput.style.display = "none";
 });
 
-phoneInput.addEventListener("input", () => {
+phoneInput?.addEventListener("input", () => {
   phoneInput.style.borderColor = "#E5E7EB"
   phoneErrorInput.style.display = "none";
 });
@@ -124,7 +124,7 @@ function validateForm() {
   const isValidEmail = validateEmail()
   const isValidName = nameInput.value !== ""
 
-  if (isValidPhone && isValidName && isValidEmail) {
+  if (isValidPhone || isValidName || isValidEmail) {
     feedbackSubmit.disabled = false;
     return true
   } else {

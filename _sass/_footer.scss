@@ -8,6 +8,13 @@
       height: 28px;
     }
 
+    &-link {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 23px;
+      color: var(--color-secondary);
+    }
+
     &__mrs {
       display: flex;
       flex-direction: row;
@@ -26,7 +33,7 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        max-height: 460px;
+        max-height: 600px;
         padding: $space * 32px 0 $space * 32px;
 
         @media screen and (max-width: 1250px) {

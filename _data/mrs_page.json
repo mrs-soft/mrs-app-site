@@ -5,32 +5,32 @@
     {
       "title": "Авторизация",
       "description": "Настройте вход с помощью корпоративного SSO или управляйте пользователями в самом приложении.",
-      "url": "/assets/img/platformPage/cards/digitizing/autorization.svg"
+      "url": "/assets/img/platformPage/cards/digitizing/autorization.png"
     },
     {
       "title": "Пользовательский интерфейс",
       "description": "С помощью UI-компонентов конструируйте удобный интерфейс для каждого участника процесса.",
-      "url": "/assets/img/platformPage/cards/digitizing/interface.svg"
+      "url": "/assets/img/platformPage/cards/digitizing/interface.png"
     },
     {
       "title": "Модели данных и правила",
       "description": "Описывайте схемы данных бизнес-объектов, задавайте правила целостности и поведения.",
-      "url": "/assets/img/platformPage/cards/digitizing/model.svg"
+      "url": "/assets/img/platformPage/cards/digitizing/model.png"
     },
     {
       "title": "Справочники",
       "description": "Подключайте справочные данные из других систем или управляйте ими в интерфейсе Платформы.",
-      "url": "/assets/img/platformPage/cards/digitizing/direction.svg"
+      "url": "/assets/img/platformPage/cards/digitizing/direction.png"
     },
     {
       "title": "Формирование документов",
       "description": "Загружайте собственные шаблоны и автоматически формируйте документы из данных системы.",
-      "url": "/assets/img/platformPage/cards/digitizing/document.svg"
+      "url": "/assets/img/platformPage/cards/digitizing/document.png"
     },
     {
       "title": "Аналитика",
       "description": "Формируйте аналитические панели из 20+ видов графиков.",
-      "url": "/assets/img/platformPage/cards/digitizing/analytics.svg"
+      "url": "/assets/img/platformPage/cards/digitizing/analytics.png"
     }
   ],
   "instrumentsBlock": {
@@ -80,7 +80,7 @@
       "title": "Как начать пользоваться Платформой?",
       "description": "Документация по настройке и эксплуатации Платформы",
       "textLink": "доступна здесь.",
-      "link": ""
+      "link": "https://developers.mrspro.ru/"
     },
     "second": {
       "title": "Что делать, если нет своей команды разработчиков?",

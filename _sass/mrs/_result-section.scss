@@ -28,6 +28,10 @@
     &__img {
       margin-top: 0 !important;
       margin-bottom: $space * 8px;
+
+      @media screen and (max-width: 450px) {
+        max-width: 350px;
+      }
     }
 
     &__text {

@@ -107,6 +107,10 @@
       max-width: 382px;
     }
 
+    @media screen and (max-width: 450px) {
+      max-width: 360px;
+    }
+
     &__text {
       display: flex;
       flex-direction: column;
@@ -120,6 +124,10 @@
       position: absolute;
       bottom: 0;
       max-height: 196px;
+
+      @media screen and (max-width: 450px) {
+          max-width: 320px;
+      }
     }
   }
 

@@ -89,16 +89,20 @@
     margin-top: $space * 14px;
     max-width: 100%;
     width: 100%;
-    max-height: 648px;
+    // max-height: 648px;
+
+    @media screen and (max-width: 1260px) {
+        width: 91%;
+    }
 
     @media screen and (max-width: 700px) {
-      height: 200px;
+      // height: 200px;
       margin-top: $space * 12px;
     }
 
     @media screen and (max-width: 965px) {
       margin-top: $space * 12px;
-      height: 70%;
+      // height: 70%;
     }
   }
 }

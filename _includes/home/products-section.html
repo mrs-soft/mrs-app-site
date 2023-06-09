@@ -5,23 +5,24 @@
     <h4>Наши<span class="orange_color">&nbsp;продукты</span></h4>
   </div>
   {% for product in site.posts %}
-    <div class="products__content">
-        <div class="products__text">
-        <h5 class="products__header">
-          {{ product.postTitle }}
-        </h5>
-        <div class="products__description">
-          <p>{{ product.postDescriptionStart }}
-            <a class="products__link" href="{{ product.registratinLink | relative_url }}"" target="_blank">{{ product.registration }}</a>
-            , {{ product.postDescriptionEnd }}
-          </p>
-        </div>
-        <a href="{{ product.url | relative_url }}" class="products__link products__more">
-          {{ link.links.more }}
-          <img src="{{ site.baseurl }}/assets/img/mainPage/arrow.svg" alt="Картинка стрелки" class="arrow-img">
-        </a>
+  <div class="products__content">
+    <div class="products__text">
+      <h5 class="products__header">{{ product.postTitle }}</h5>
+      <div class="products__description">
+        <p>
+          {{ product.postDescriptionStart }}
+          <a class="products__link" href="{{ product.registratinLink | relative_url }}" target="_blank"
+            >{{ product.registration }}</a
+          >
+          , {{ product.postDescriptionEnd }}
+        </p>
       </div>
-      <img src="{{site.baseurl}}{{product.image }}" alt="product-image" class="products__image">
+      <a href="{{ product.url | relative_url }}" class="products__link products__more">
+        {{ link.links.more }}
+        <img src="{{ site.baseurl }}/assets/img/mainPage/arrow.svg" alt="Картинка стрелки" class="arrow-img" />
+      </a>
     </div>
+    <img src="{{site.baseurl}}{{product.image }}" alt="product-image" class="products__image" />
+  </div>
   {% endfor %}
 </section>

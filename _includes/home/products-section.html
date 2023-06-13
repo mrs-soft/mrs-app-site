@@ -22,7 +22,16 @@
         <img src="{{ site.baseurl }}/assets/img/mainPage/arrow.svg" alt="Картинка стрелки" class="arrow-img" />
       </a>
     </div>
-    <img src="{{site.baseurl}}{{product.image }}" alt="product-image" class="products__image" />
+    <img
+      src="{{site.baseurl}}{{product.image }}"
+      alt="product-image"
+      class="products__image"
+      srcset="{{
+    site.baseurl}}/assets/img/mainPage/ourProducts/secondImg382w.png 382w, {{
+    site.baseurl}}/assets/img/mainPage/ourProducts/secondImg592w.png 592w, {{ site.baseurl }}/assets/img/mainPage/ourProducts/secondImg.png 1200w"
+      sizes="(max-width: 540px) 382px, (max-width: 700px) 592px, 1200px"
+      loading="lazy"
+    />
   </div>
   {% endfor %}
 </section>

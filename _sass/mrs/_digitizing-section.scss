@@ -111,6 +111,10 @@
       max-width: 360px;
     }
 
+    @media screen and (max-width: 380px) {
+      max-width: 330px;
+    }
+
     &__text {
       display: flex;
       flex-direction: column;

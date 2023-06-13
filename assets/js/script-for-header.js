@@ -17,7 +17,7 @@ if (pageAbout || pagePrivacy || pageError) {
 
 // Боковое меню
 const burgerBtn = document.getElementById("burger-btn");
-const mobileMenu = document.getElementById("mobile-menu");
+const mobileMenu = document.getElementById("simple-mobile-menu");
 
 //open mobile menu
 burgerBtn.addEventListener("click", (e) => {

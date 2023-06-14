@@ -51,10 +51,10 @@
       margin-bottom: $space * 20px;
 
       &__img {
-        width: 34px;
-        height: 34px;
-        margin-top: 0 !important;
-        margin-right: 11px;
+        img {
+          margin-top: 0 !important;
+          width: 100% !important;
+        }
       }
 
       &__title {

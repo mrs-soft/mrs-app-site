@@ -1,6 +1,7 @@
 
 .footer {
     width: 100%;
+    border-top: 1px solid var(--color-background-divider);
 
     &__logo {
       margin-right: $space * 2px;

@@ -1,12 +1,15 @@
 {% assign text = site.data.mrs_page %} {% assign btnText = site.data.texts_app.button %}
-<section class="first">
+<section class="first bottom-border">
   <div class="first__container">
     <div class="first__container__logo">
-      <img class="first__container__logo__img" src="{{ site.baseurl }}/assets/img/logo.svg" alt="logo" />
-      <h5 class="first__container__logo__title">Платформа</h5>
+      <a href="{{site.baseurl}}/" class="first__container__logo__img">
+        <img src="{{ site.baseurl }}/assets/img/platformPage/platformLogo.svg" alt="platform-logo"
+      /></a>
     </div>
     <div class="first__container__text">
-      <h1>Приложения для бизнеса<span class="orange_color">&nbsp;в минимальные сроки</span></h1>
+      <h1>
+        Приложения для бизнеса<span class="orange_color">&nbsp;<br />в минимальные сроки</span>
+      </h1>
       <h6>{{ text.firstBlock }}</h6>
     </div>
     <button id="first-section-btn">{{ btnText.moreIntegration }}</button>

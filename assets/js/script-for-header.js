@@ -9,6 +9,8 @@ const firstSection = document.querySelector(".first");
 const header = document.querySelector(".header");
 const footer = document.querySelector(".footer");
 
+const newTitle = document.getElementsByTagName('h1')
+
 if (pageAbout || pagePrivacy || pageError) {
   header.style.backgroundColor = "#fff";
 } else {
@@ -59,6 +61,21 @@ document.addEventListener("scroll", () => {
 
 });
 
+function isInViewport(element) {
+  if (!element) return
+  const rect = element.getBoundingClientRect();
+  return rect.top >= -rect.height
+}
+
+//Динамический title и description
+
+window.addEventListener(
+  "load",
+  () => {
+    document.title = newTitle[0]?.innerText
+  }
+);
+
 //Выделение ссылок
 
 // const headerLink = document.querySelectorAll(".header-link");
@@ -73,11 +90,7 @@ document.addEventListener("scroll", () => {
 
 // }
 
-function isInViewport(element) {
-  if (!element) return
-  const rect = element.getBoundingClientRect();
-  return rect.top >= -rect.height
-}
+
 
 
 

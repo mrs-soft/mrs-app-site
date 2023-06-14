@@ -7,12 +7,12 @@
   gap: $space * 16px;
   padding: $space * 32px 0 $space * 32px;
   max-height: 976px;
-  background-image: linear-gradient(to top, transparent 50%, var(--color-background-default) 70%),
-      linear-gradient(to right, transparent 50%, var(--color-background-default) 100%),
-      linear-gradient(to left, transparent 50%, var(--color-background-default) 100%),
-      url('../../assets/img/mainPage/background.svg');
-  background-repeat: no-repeat;
-  background-position: center;
+  // background-image: linear-gradient(to top, transparent 50%, var(--color-background-default) 70%),
+  //     linear-gradient(to right, transparent 50%, var(--color-background-default) 100%),
+  //     linear-gradient(to left, transparent 50%, var(--color-background-default) 100%),
+  //     url('../../assets/img/mainPage/background.svg');
+  // background-repeat: no-repeat;
+  // background-position: center;
 
   @media screen and (max-width: 1200px) {
     width: 90%;

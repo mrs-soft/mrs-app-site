@@ -1,4 +1,4 @@
-#### Политика <span class="orange_color">конфиденциальности</span>
+# Политика <span class="orange_color">конфиденциальности</span>
 
 ##### 1. Общие положения
 

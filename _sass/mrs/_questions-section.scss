@@ -44,6 +44,13 @@
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.2s ease-out;
+      flex-wrap: wrap;
+
+      @media screen and (max-width: 500px) {
+        max-width: 306px;
+        flex-direction: column;
+      }
+
 
       a {
         color: var(--color-main);

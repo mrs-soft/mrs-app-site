@@ -176,6 +176,36 @@
       flex: 0 0 62%;
     }
   }
+
+  // @media (max-width: 600px) {
+  //   &> :first-child {
+  //     flex: 0 0 62%;
+  //   }
+  // }
+
+  @media (max-width: 600px) {
+    &> :first-child {
+      flex: 0 0 61%;
+    }
+  }
+
+  @media (max-width: 490px) {
+    &> :first-child {
+      flex: 0 0 60%;
+    }
+  }
+
+  @media (max-width: 414px) {
+    &> :first-child {
+      flex: 0 0 59%;
+    }
+  }
+
+  @media (max-width: 370px) {
+    &> :first-child {
+      flex: 0 0 58%;
+    }
+  }
 }
 
 .second-flex {

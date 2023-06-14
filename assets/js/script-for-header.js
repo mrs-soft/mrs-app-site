@@ -9,6 +9,8 @@ const firstSection = document.querySelector(".first");
 const header = document.querySelector(".header");
 const footer = document.querySelector(".footer");
 
+const partnersSection = document.querySelector(".partners");
+
 const newTitle = document.getElementsByTagName('h1')
 
 if (pageAbout || pagePrivacy || pageError) {
@@ -74,6 +76,8 @@ window.addEventListener(
   () => {
     if (location.href.includes('platform')) {
       document.title = "МРС Платформа"
+    } else if (partnersSection) {
+      document.title = "МРС"
     } else document.title = newTitle[0]?.innerText
   }
 );

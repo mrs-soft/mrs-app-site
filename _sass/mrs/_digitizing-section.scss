@@ -57,12 +57,6 @@
         flex-direction: row;
         margin-bottom: $space * 6px;
 
-        // @media screen and (max-width: 900px) {
-        //   h4 {
-        //     font-size: 24px;
-        //   }
-        // }
-
         @media screen and (max-width: 600px) {
             flex-direction: column;
         }
@@ -146,6 +140,5 @@
 
   p {
     color: var(--color-secondary);
-    // max-width: 336px;
   }
 }

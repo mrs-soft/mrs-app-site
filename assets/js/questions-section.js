@@ -14,7 +14,7 @@ for (i = 0; i < acc.length; i++) {
       this.querySelector('.open').style.display = "block"
       this.querySelector('.close').style.display = "none"
     } else {
-      panel.style.maxHeight = panel.scrollHeight + 30 + "px";
+      panel.style.maxHeight = panel.scrollHeight + 50 + "px";
 
       this.querySelector('.open').style.display = "none"
       this.querySelector('.close').style.display = "block"

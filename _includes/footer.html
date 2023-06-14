@@ -2,15 +2,13 @@
 <footer class="footer">
   <div class="footer__container">
     <div class="footer__top">
-      <div class="footer__top__left">
-        <div class="footer__right">
-          <a href="{{site.baseurl}}/"> <img src="{{ site.baseurl }}/assets/img/logoWithTitle.svg" alt="logo" /></a>
-        </div>
+      <div class="footer__top__element first-flex">
+        <a href="{{site.baseurl}}/"> <img src="{{ site.baseurl }}/assets/img/logoWithTitle.svg" alt="logo" /></a>
         <a href="https://sk.ru/" target="_blank">
           <img src="/assets/img/sk.svg" alt="Логотип СК" class="footer__sk__logo" />
         </a>
       </div>
-      <div class="footer__top__right">
+      <div class="footer__top__element second-flex">
         <div class="footer__right">
           <p>{{ footerText.title.platform }}</p>
           <a href="{{site.baseurl}}/platform" class="footer-link"> {{ footerText.title.aboutPlatform }} </a>
@@ -18,6 +16,8 @@
             {{ footerText.title.developers }}
           </a>
         </div>
+      </div>
+      <div class="footer__top__element third-flex">
         <div class="footer__right">
           <p>{{ footerText.title.resources }}</p>
           <a href="{{site.baseurl}}/about" class="footer-link"> {{ text.links.aboutUs }} </a>

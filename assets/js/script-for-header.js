@@ -72,7 +72,9 @@ function isInViewport(element) {
 window.addEventListener(
   "load",
   () => {
-    document.title = newTitle[0]?.innerText
+    if (location.href.includes('platform')) {
+      document.title = "МРС Платформа"
+    } else document.title = newTitle[0]?.innerText
   }
 );
 

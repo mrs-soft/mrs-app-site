@@ -3,7 +3,14 @@
   <div class="first__container">
     <div class="first__container__logo">
       <a href="{{site.baseurl}}/" class="first__container__logo__img">
-        <img src="{{ site.baseurl }}/assets/img/platformPage/platformLogo.svg" alt="platform-logo"
+        <img
+          src="{{ site.baseurl }}/assets/img/platformPage/platformLogo.svg"
+          alt="platform-logo"
+          srcset="
+            {{site.baseurl}}/assets/img/platformPage/platformLogoSmall.svg 127w,
+            {{site.baseurl}}/assets/img/platformPage/platformLogo.svg      177w
+          "
+          sizes="(max-width: 540px) 127px, 177px"
       /></a>
     </div>
     <div class="first__container__text">

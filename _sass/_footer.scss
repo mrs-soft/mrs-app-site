@@ -56,17 +56,16 @@
         justify-content: space-between;
         max-width: $max-width-contaner;
 
-        @media (max-width: 700px) {
+        @media (max-width: 780px) {
           gap: $space * 10px;
           max-height: 250px;
           flex-wrap: wrap;
+          flex-direction: column;
         }
 
         &__element {
           display: flex;
-          flex-direction: column;
           gap: $space * 6px;
-          max-width: 384px;
           width: 100%;
         }
 
@@ -111,8 +110,10 @@
         display: flex;
         flex-direction: column;
         // justify-content: space-between;
+        max-width: 384px;
         color: var(--color-secondary);
         gap: $space * 2px;
+        width: 100%;
 
         p {
           font-weight: 600;
@@ -166,56 +167,25 @@
 }
 
 .first-flex {
-  @media (max-width: 700px) {
-    flex: 0 0 100%;
-    display: flex;
+  max-width: 384px;
+  flex-direction: column;
+  flex: 1;
+
+  @media (max-width: 780px) {
     flex-direction: row;
     max-width: none;
 
-    &> :first-child {
-      flex: 0 0 62%;
+    a {
+      flex: 1
     }
   }
 
-  // @media (max-width: 600px) {
-  //   &> :first-child {
-  //     flex: 0 0 62%;
-  //   }
-  // }
-
-  @media (max-width: 600px) {
-    &> :first-child {
-      flex: 0 0 61%;
-    }
-  }
-
-  @media (max-width: 490px) {
-    &> :first-child {
-      flex: 0 0 60%;
-    }
-  }
-
-  @media (max-width: 414px) {
-    &> :first-child {
-      flex: 0 0 59%;
-    }
-  }
-
-  @media (max-width: 370px) {
-    &> :first-child {
-      flex: 0 0 58%;
-    }
-  }
 }
 
 .second-flex {
-  @media (max-width: 700px) {
-    flex: 0 0 33.333333%;
+  flex: 2;
+  @media (max-width: 780px) {
+    // flex: 0 0 33.333333%;
   }
 }
 
-.third-flex {
-  @media (max-width: 700px) {
-    flex: 0 0 33.333333%;
-  }
-}

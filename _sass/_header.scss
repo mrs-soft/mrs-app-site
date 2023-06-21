@@ -5,6 +5,7 @@
   justify-content: center;
   z-index: 2;
   background: var(--color-background-default);
+  position: fixed;
 
   &__fixed {
     position: fixed;

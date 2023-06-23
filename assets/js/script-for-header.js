@@ -81,10 +81,15 @@ window.addEventListener(
       document.title = "МРС"
     } else document.title = newTitle[0]?.innerText
 
+    if (firstSection?.querySelector('h6')?.innerText) {
+      document.querySelector('meta[name="description"]').setAttribute("content", firstSection?.querySelector('h6')?.innerText);
+
+      document.querySelector('meta[property="og:description"]').setAttribute("content", firstSection?.querySelector('h6')?.innerText);
+    }
+
     const metaTitle = firstSection?.querySelector('h1')?.innerText || pageAbout?.querySelector('h1')?.innerText || pagePrivacy?.querySelector('h1')?.innerText
 
     document.querySelector('meta[property="og:title"]').setAttribute("content", metaTitle);
-    document.querySelector('meta[property="og:description"]').setAttribute("content", firstSection?.querySelector('h6')?.innerText);
     document.querySelector('meta[property="og:url"]').setAttribute("content", location.href);
 
   }

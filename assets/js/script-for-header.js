@@ -13,6 +13,9 @@ const partnersSection = document.querySelector(".partners");
 
 const newTitle = document.getElementsByTagName('h1')
 
+const currentYear = new Date().getFullYear()
+document.getElementById("year").innerText = currentYear
+
 if (pageAbout || pagePrivacy || pageError) {
   header.style.backgroundColor = "#fff";
 } else {

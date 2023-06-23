@@ -74,16 +74,6 @@ function isInViewport(element) {
 window.addEventListener(
   "load",
   () => {
-    let url_view = window.location.href;
-    const url_path = window.location.pathname;
-    const url_hash = window.location.hash;
-    if (url_path.endsWith("/") || url_hash.endsWith("/")) {
-      //Skip Home Page
-      if (url_path !== "/") {
-        url_view = url_view.slice(0, -1);
-        window.location.replace(url_view);
-      }
-    }
 
     if (location.href.includes('platform')) {
       document.title = "МРС Платформа"
@@ -98,6 +88,20 @@ window.addEventListener(
 
   }
 );
+
+window.addEventListener("DOMContentLoaded", function () {
+  let url_view = window.location.href;
+  const url_path = window.location.pathname;
+  const url_hash = window.location.hash;
+  if (url_path.endsWith("/") || url_hash.endsWith("/")) {
+    //Skip Home Page
+    if (url_path !== "/") {
+      url_view = url_view.slice(0, -1);
+      window.location.replace(url_view);
+    }
+  }
+});
+
 
 //Выделение ссылок
 

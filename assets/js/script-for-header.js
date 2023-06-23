@@ -85,6 +85,7 @@ window.addEventListener(
 
     document.querySelector('meta[property="og:title"]').setAttribute("content", metaTitle);
     document.querySelector('meta[property="og:description"]').setAttribute("content", firstSection?.querySelector('h6')?.innerText);
+    document.querySelector('meta[property="og:url"]').setAttribute("content", location.href);
 
   }
 );
@@ -101,6 +102,7 @@ window.addEventListener("DOMContentLoaded", function () {
     }
   }
 });
+
 
 
 //Выделение ссылок

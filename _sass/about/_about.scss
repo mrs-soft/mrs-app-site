@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   background-color: var(--color-background-paper);
+  margin-top: 72px;
 
   &__content {
     max-width: 800px;
@@ -16,8 +17,8 @@
     color: var(--color-primary);
 
     @media screen and (max-width: 900px) {
-        width: 90%;
-        margin: 0 auto;
+      width: 90%;
+      margin: $space * 32px auto 0px;
     }
     
     @media screen and (max-width: 700px) {

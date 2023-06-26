@@ -20,7 +20,7 @@
 
 
   @media (max-width: 1000px) {
-    width: 92%;
+    // width: 92%;
     margin: 0 auto;
   }
 
@@ -32,6 +32,10 @@
     max-width: 1200px;
     margin-top: $space * 16px;
     margin-bottom: $space * 32px;
+
+    @media (max-width: 1250px) {
+        width: 91%;
+    }
 
     @media screen and (max-width: 760px) {
       margin-top: $space * 8px;

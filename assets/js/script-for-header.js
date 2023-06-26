@@ -77,9 +77,10 @@ function isInViewport(element) {
 window.addEventListener(
   "load",
   () => {
+    const metaTitle = firstSection?.querySelector('h1')?.innerText || pageAbout?.querySelector('h1')?.innerText || pagePrivacy?.querySelector('h1')?.innerText
 
     if (location.href.includes('platform')) {
-      document.title = "МРС Платформа"
+      document.title = metaTitle
     } else if (partnersSection) {
       document.title = "МРС"
     } else document.title = newTitle[0]?.innerText
@@ -89,8 +90,6 @@ window.addEventListener(
 
       document.querySelector('meta[property="og:description"]').setAttribute("content", firstSection?.querySelector('h6')?.innerText);
     }
-
-    const metaTitle = firstSection?.querySelector('h1')?.innerText || pageAbout?.querySelector('h1')?.innerText || pagePrivacy?.querySelector('h1')?.innerText
 
     document.querySelector('meta[property="og:title"]').setAttribute("content", metaTitle);
     document.querySelector('meta[property="og:url"]').setAttribute("content", location.href);

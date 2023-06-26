@@ -8,6 +8,7 @@ lang: ru
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 sass:
   sass_dir: _sass

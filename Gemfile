@@ -34,3 +34,5 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 gem "jekyll-sass-converter", "< 3.0"
 
+gem 'jekyll-seo-tag'
+

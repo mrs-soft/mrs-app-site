@@ -92,30 +92,30 @@ closeModalBtn?.addEventListener("click", () => {
 })
 
 function sendMail(payload) {
-  const api = "";
+  const api = "https://n8n.mrsdev.ru/webhook-test/data";
 
   var data = {
-    template_params: payload,
+    payload,
   };
 
-
+  console.log(data, 'data')
   return (
-    { status: 200 }
-    // fetch(api, {
-    //   method: "POST",
-    //   body: JSON.stringify(data),
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    // })
-    //   // .then((res) => res.json())
-    //   .then((data) => {
-    //     return data;
-    //   })
-    //   .catch((error) => {
-    //     console.log(error);
-    //     return error;
-    //   })
+    // { status: 200 }
+    fetch(api, {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      // .then((res) => res.json())
+      .then((data) => {
+        return data;
+      })
+      .catch((error) => {
+        console.log(error);
+        return error;
+      })
   );
 }
 

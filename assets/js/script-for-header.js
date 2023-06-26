@@ -72,59 +72,6 @@ function isInViewport(element) {
   return rect.top >= -rect.height
 }
 
-//Динамический title и description
-
-// window.addEventListener(
-//   "load",
-//   () => {
-//     const metaTitle = firstSection?.querySelector('h1')?.innerText || pageAbout?.querySelector('h1')?.innerText || pagePrivacy?.querySelector('h1')?.innerText
-
-//     if (location.href.includes('platform')) {
-//       document.title = metaTitle
-//     } else if (partnersSection) {
-//       document.title = "МРС"
-//     } else document.title = newTitle[0]?.innerText
-
-//     if (firstSection?.querySelector('h6')?.innerText) {
-//       document.querySelector('meta[name="description"]').setAttribute("content", firstSection?.querySelector('h6')?.innerText);
-
-//       document.querySelector('meta[property="og:description"]').setAttribute("content", firstSection?.querySelector('h6')?.innerText);
-//     }
-
-//     document.querySelector('meta[property="og:title"]').setAttribute("content", metaTitle);
-//     document.querySelector('meta[property="og:url"]').setAttribute("content", location.href);
-
-//   }
-// );
-
-// window.addEventListener("DOMContentLoaded", function () {
-//   let url_view = window.location.href;
-//   const url_path = window.location.pathname;
-//   const url_hash = window.location.hash;
-//   if (url_path.endsWith("/") || url_hash.endsWith("/")) {
-//     //Skip Home Page
-//     if (url_path !== "/") {
-//       url_view = url_view.slice(0, -1);
-//       window.location.replace(url_view);
-//     }
-//   }
-// });
-
-
-
-//Выделение ссылок
-
-// const headerLink = document.querySelectorAll(".header-link");
-// let j
-
-// for (j = 0; j < headerLink.length; j++) {
-//   if (window.location.href === headerLink[j]?.href) {
-//     headerLink[j]?.classList.add("orange_color")
-//   } else {
-//     headerLink[j]?.classList.remove("orange_color")
-//   }
-
-// }
 
 
 

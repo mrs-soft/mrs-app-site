@@ -92,29 +92,29 @@ closeModalBtn?.addEventListener("click", () => {
 })
 
 function sendMail(payload) {
-  const api = "https://nodemation.plotpad.com/webhook-test/1fc8201a-fd35-4e34-af73-baae818c5e70";
+  const api = "";
 
   var data = {
     payload,
   };
 
   return (
-    // { status: 200 }
-    fetch(api, {
-      method: "POST",
-      body: JSON.stringify(data),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      // .then((res) => res.json())
-      .then((data) => {
-        return { status: 200 }
-      })
-      .catch((error) => {
-        console.log(error);
-        return error;
-      })
+    { status: 200 }
+    // fetch(api, {
+    //   method: "POST",
+    //   body: JSON.stringify(data),
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    // })
+    //   // .then((res) => res.json())
+    //   .then((data) => {
+    //     return { status: 200 }
+    //   })
+    //   .catch((error) => {
+    //     console.log(error);
+    //     return error;
+    //   })
   );
 }
 

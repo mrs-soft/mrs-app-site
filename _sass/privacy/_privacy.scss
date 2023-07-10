@@ -18,6 +18,7 @@
 
     @media screen and (max-width: 900px) {
       width: 90%;
+      margin-bottom: $space * 10px;
     }
 
     @media screen and (max-width: 700px) {
@@ -44,7 +45,7 @@
     margin-top: $space * 10px;
 
     @media screen and (max-width: 700px) {
-      margin-top: $space * 10px;
+      margin-top: $space * 4px;
     }
   }
 

@@ -26,12 +26,26 @@
     }
 
     &__img {
-      margin-top: 0 !important;
-      margin-bottom: $space * 4px;
+      // margin-top: 0 !important;
+      // margin-bottom: $space * 4px;
 
-      @media screen and (max-width: 450px) {
-        max-width: 350px;
+      // @media screen and (max-width: 450px) {
+      //   max-width: 350px;
+      // }
+
+      margin-top: 0 !important;
+      margin-bottom: $space * 8px;
+      max-width: 400px;
+      max-height: 210px;
+
+      @media (max-width: 650px) {
+        width: 82%;
       }
+    }
+
+    &__logo {
+      margin-top: -72px;
+      margin-bottom: 16px;
     }
 
     &__text {

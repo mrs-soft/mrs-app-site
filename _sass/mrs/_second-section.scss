@@ -42,13 +42,13 @@
       margin-bottom: $space * 4px;
 
       &__img {
-        margin-top: -10px !important;
+        margin-top: 0px !important;
       }
 
-      &__stick {
-        margin-top: 0 !important;
-        height: 80px;
-      }
+      // &__stick {
+      //   margin-top: 0 !important;
+      //   height: 80px;
+      // }
     }
 
     &__text {

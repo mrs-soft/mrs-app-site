@@ -1,31 +1,19 @@
-<svg width="86" height="156" viewBox="0 0 86 156" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="1" height="80" transform="translate(42.5)" fill="url(#paint0_linear_4496_35174)"/>
-<g filter="url(#filter0_d_4496_35174)">
-<rect x="15" y="80" width="56" height="56" rx="28" fill="#F97316"/>
-<mask id="mask0_4496_35174" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="32" y="97" width="22" height="22">
-<path d="M32 99C32 97.8954 32.8954 97 34 97H52C53.1046 97 54 97.8954 54 99V117C54 118.105 53.1046 119 52 119H34C32.8954 119 32 118.105 32 117V99Z" fill="#D9D9D9"/>
+<svg width="56" height="136" viewBox="0 0 56 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1" height="80" transform="translate(27.5)" fill="url(#paint0_linear_4496_35174)"/>
+<rect y="80" width="56" height="56" rx="28" fill="#F97316"/>
+<mask id="mask0_4496_35174" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="17" y="97" width="22" height="22">
+<path d="M17 99C17 97.8954 17.8954 97 19 97H37C38.1046 97 39 97.8954 39 99V117C39 118.105 38.1046 119 37 119H19C17.8954 119 17 118.105 17 117V99Z" fill="#D9D9D9"/>
 </mask>
 <g mask="url(#mask0_4496_35174)">
-<path opacity="0.24" d="M54 118V99.4142C54 98.5233 52.9229 98.0771 52.2929 98.7071L33.7071 117.293C33.0771 117.923 33.5233 119 34.4142 119H53C53.5523 119 54 118.552 54 118Z" fill="white"/>
+<path opacity="0.24" d="M39 118V99.4142C39 98.5233 37.9229 98.0771 37.2929 98.7071L18.7071 117.293C18.0771 117.923 18.5233 119 19.4142 119H38C38.5523 119 39 118.552 39 118Z" fill="white"/>
 </g>
-<mask id="mask1_4496_35174" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="32" y="97" width="22" height="22">
-<path d="M32 99C32 97.8954 32.8954 97 34 97H52C53.1046 97 54 97.8954 54 99V117C54 118.105 53.1046 119 52 119H34C32.8954 119 32 118.105 32 117V99Z" fill="#D9D9D9"/>
+<mask id="mask1_4496_35174" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="17" y="97" width="22" height="22">
+<path d="M17 99C17 97.8954 17.8954 97 19 97H37C38.1046 97 39 97.8954 39 99V117C39 118.105 38.1046 119 37 119H19C17.8954 119 17 118.105 17 117V99Z" fill="#D9D9D9"/>
 </mask>
 <g mask="url(#mask1_4496_35174)">
-<path d="M32 118V99.4142C32 98.5233 33.0771 98.0771 33.7071 98.7071L54 119H33C32.4477 119 32 118.552 32 118Z" fill="white"/>
-</g>
+<path d="M17 118V99.4142C17 98.5233 18.0771 98.0771 18.7071 98.7071L39 119H18C17.4477 119 17 118.552 17 118Z" fill="white"/>
 </g>
 <defs>
-<filter id="filter0_d_4496_35174" x="0" y="70" width="86" height="86" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="5"/>
-<feGaussianBlur stdDeviation="7.5"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4496_35174"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4496_35174" result="shape"/>
-</filter>
 <linearGradient id="paint0_linear_4496_35174" x1="0.5" y1="78.1921" x2="0.500021" y2="1.3712e-07" gradientUnits="userSpaceOnUse">
 <stop stop-color="#F97316"/>
 <stop offset="1" stop-color="#F97316" stop-opacity="0"/>

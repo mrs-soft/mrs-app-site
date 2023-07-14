@@ -1,9 +1,10 @@
 <svg width="2" height="80" viewBox="0 0 2 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="1" height="80" transform="translate(0.5)" fill="url(#paint0_linear_4020_34700)"/>
+<rect width="1" height="80" transform="translate(0.5)" fill="url(#paint0_linear_4020_35055)"/>
 <defs>
-<linearGradient id="paint0_linear_4020_34700" x1="0.5" y1="78.1921" x2="0.500021" y2="1.3712e-07" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_4020_35055" x1="0.5" y1="78.1921" x2="0.500021" y2="1.3712e-07" gradientUnits="userSpaceOnUse">
 <stop stop-color="#F97316"/>
 <stop offset="1" stop-color="#F97316" stop-opacity="0"/>
 </linearGradient>
 </defs>
 </svg>
+

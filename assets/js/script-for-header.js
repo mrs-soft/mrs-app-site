@@ -118,23 +118,6 @@ function scrollFunction() {
 
 
 
-// function LoadImage(element, src, srcset) {
-//   var img = new Image()
-
-//   img.onload = function () {
-//     element.src = img.src;
-//     element.classList.remove("skeleton");
-//     element.srcset = img.srcset;
-//     element.alt = "first-image"
-//   };
-
-//   img.src = src
-//   img.srcset = srcset
-// }
-
-// LoadImage(homeFirstImage, "/assets/img/mainPage/firstImg.png", "/assets/img/mainPage/firstImg382w.png 382w, /assets/img/mainPage/firstImg592w.png 592w, /assets/img/mainPage/firstImg.png 1200w")
-
-
 
 
 

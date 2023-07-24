@@ -103,6 +103,19 @@ if (mrsSecondImage) {
   }
 }
 
+//Скролл для кнопок 
+
+const btnFirstSection = document.getElementById("first-section-btn");
+const btnIntegrationSection = document.getElementById("integration-section-btn");
+
+btnFirstSection?.addEventListener("click", scrollFunction)
+btnIntegrationSection?.addEventListener("click", scrollFunction)
+
+function scrollFunction() {
+  const element = document.querySelector(".price");
+  element.scrollIntoView();
+}
+
 
 
 // function LoadImage(element, src, srcset) {

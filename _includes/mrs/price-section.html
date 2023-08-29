@@ -1,0 +1,59 @@
+{% assign text = site.data.mrs_page.priceBlock %} {% assign btnText = site.data.texts_app.button %}
+<section class="price">
+  <div class="price__container">
+    <div class="price__container__text">
+      <h4>Цены и&nbsp;тарифы</h4>
+    </div>
+    <p>{{ text.description }}</p>
+  </div>
+  <form id="form-feedback">
+    <label for="feedback-name"
+      >Имя&nbsp;
+      <!-- <p class="error_color">*</p> -->
+    </label>
+    <input type="text" id="feedback-name" class="feedback-form__input" name="name" placeholder="Введите ваше имя" />
+    <!-- <label id="feedback-name-error">ewrfwerf</label> -->
+    <label for="feedback-email"
+      >E-mail&nbsp;
+      <!-- <p class="error_color">*</p> -->
+    </label>
+    <input type="email" id="feedback-email" name="email" class="feedback-form__input" placeholder="Введите e-mail" />
+    <p id="feedback-email-error">Неверный e-mail</p>
+    <label for="feedback-telephone"
+      >Номер телефона&nbsp;
+      <!-- <p class="error_color">*</p> -->
+    </label>
+    <input
+      type="tel"
+      id="feedback-telephone"
+      name="telephone"
+      class="feedback-form__input"
+      minlength="8"
+      placeholder="Введите номер телефона"
+    />
+    <p id="feedback-telephone-error">Неверный номер</p>
+    <!-- <div>
+      <input type="checkbox" id="feedback-checkbox" name="checkbox" class="feedback-form__input" required />
+      <label for="feedback-checkbox">Согласен с политикой конфиденциальности</label>
+    </div> -->
+    <button type="submit" id="feedback-submit">
+      {{ btnText.placeOrder }}
+      <img src="{{ site.baseurl }}/assets/img/platformPage/arrowWhite.svg" alt="Картинка стрелки" class="arrow-img" />
+    </button>
+    <div class="price__personal__text">
+      <p>
+        Отправляя запрос, вы даете согласие на обработку персональных данных и&nbsp;подтверждаете, что ознакомились
+        с&nbsp;<a class="price__personal__text__link" href="{{site.baseurl}}/privacy">Политикой конфиденциальности</a>
+      </p>
+    </div>
+  </form>
+
+  <div class="feedback-form-message">
+    <div class="feedback-form-message__container">
+      <div class="feedback-form-message__header">
+        <img class="close-modal" src="{{ site.baseurl }}/assets/img/close.svg" alt="Картинка закрытия" />
+      </div>
+      <p class="feedback-form-message__text"></p>
+    </div>
+  </div>
+</section>

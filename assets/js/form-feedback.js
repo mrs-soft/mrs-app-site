@@ -51,8 +51,6 @@ feedbackForm?.addEventListener("submit", async function (e) {
 
   feedbackSubmit.disabled = true;
 
-  await new Promise((resolve) => setTimeout(resolve, 1000));
-
   const res = await sendMail(payload);
 
   feedbackSubmit.disabled = false;

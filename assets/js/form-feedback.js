@@ -85,13 +85,13 @@ closeModalBtn?.addEventListener("click", () => {
 })
 
 function sendMail(payload) {
-  const api = "https://nodemation.plotpad.com:5678/webhook/data:";
+  const api = "https://n8n.dev.mrsapp.ru/webhook/data";
 
   var data = {
     payload,
   };
 
-  fetch(api, {
+  return fetch(api, {
     method: "POST",
     body: JSON.stringify(data),
     headers: {
@@ -100,8 +100,7 @@ function sendMail(payload) {
   })
     // .then((res) => res.json())
     .then((data) => {
-      console.log(data, "data")
-      return { status: 200 }
+      return data
     })
     .catch((error) => {
       console.log(error);

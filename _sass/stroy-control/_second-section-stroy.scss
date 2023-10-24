@@ -1,0 +1,111 @@
+.second-stroy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  max-height: 1176px;
+  border-top: 1px solid var(--color-background-divider);
+
+  @media (max-width: 1000px) {
+    // width: 92%;
+    // margin: 0 auto;
+    padding: 0 16px;
+  }
+
+  @media screen and (max-width: 700px) {
+    background-size: 410px 350px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    align-self: center;
+    max-width: 1200px;
+    margin-top: $space * 16px;
+    margin-bottom: $space * 32px;
+          position: relative;
+
+    @media screen and (max-width: 1250px) {
+      width: 91%;
+    }
+
+    @media screen and (max-width: 700px) {
+      margin-top: $space * 8px;
+      margin-bottom: $space * 16px;
+    }
+
+    &__absolute {
+        position: absolute;
+        top: 0;
+        left: -28px;
+        bottom: 0;
+    
+        &__logo {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          height: 100%;
+          // margin-bottom: $space * 8px;
+    
+          &__img {
+            margin-top: 0px !important;
+            width: 57px;
+          }
+        }
+      }
+
+    &__text {
+      // max-width: 800px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      &> :nth-child(1) {
+        margin-bottom: $space * 6px;
+      }
+
+      &> :last-child {
+
+        @media screen and (max-width: 965px) {
+          max-width: 800px;
+        }
+      }
+
+      &__title {
+        display: flex;
+        flex-direction: row;
+
+        @media screen and (max-width: 1050px) {
+          max-width: 800px;
+
+        }
+
+        @media screen and (max-width: 620px) {
+          flex-direction: column;
+
+        }
+      }
+
+    }
+  }
+
+  img {
+    margin-top: $space * 14px;
+    max-width: 100%;
+    width: 100%;
+
+    @media screen and (max-width: 1260px) {
+      // width: 91%;
+    }
+
+    @media screen and (max-width: 700px) {
+      margin-top: $space * 12px;
+    }
+
+    @media screen and (max-width: 965px) {
+      margin-top: $space * 12px;
+    }
+  }
+}

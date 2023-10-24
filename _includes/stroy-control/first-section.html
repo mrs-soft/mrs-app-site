@@ -1,0 +1,24 @@
+{% assign text = site.data.stroy_control_page %} {% assign btnText = site.data.texts_app.button %}
+<section class="first">
+  <div class="first__container">
+    <div class="first__container__text">
+      <h1>
+        <span class="orange_color">СтройКонтроль</span> — стандарт&nbsp;<br />
+        автоматизации контроля качества
+      </h1>
+      <h6>{{ text.firstBlock }}</h6>
+    </div>
+    <button>{{ btnText.startUseStroyControl }}</button>
+    <img
+      src="{{ site.baseurl }}/assets/img/stroyControlPage/firstPage.png"
+      alt="mrs-image"
+      srcset="{{
+    site.baseurl}}/assets/img/platformPage/platform382w.png 382w, {{
+    site.baseurl}}/assets/img/platformPage/platform592w.png 592w, {{ site.baseurl }}/assets/img/stroyControlPage/firstPage.png 1200w"
+      sizes="(max-width: 540px) 382px, (max-width: 700px) 592px, 1200px"
+      loading="lazy"
+      id="mrs-first-image"
+      class="skeleton"
+    />
+  </div>
+</section>

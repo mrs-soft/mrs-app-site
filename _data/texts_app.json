@@ -37,6 +37,7 @@
     "return": "Вернуться на главную",
     "moreIntegration": "Узнать больше о платформе",
     "placeOrder": "Отправить запрос",
-    "startIntegration": "Начать интеграцию"
+    "startIntegration": "Начать интеграцию",
+    "startUseStroyControl": "Начать пользоваться"
   }
 }

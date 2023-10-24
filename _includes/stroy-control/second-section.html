@@ -1,0 +1,33 @@
+{% assign text = site.data.mrs_page %}
+<section class="second-stroy">
+  <div class="second-stroy__container">
+    <div class="second-stroy__container__absolute">
+      <div class="second-stroy__container__absolute__logo">
+        <img
+          class="second-stroy__container__absolute__logo__img"
+          src="{{ site.baseurl }}/assets/img/stroyControlPage/circles/calendar.svg"
+          alt="number-image"
+        />
+        <span class="line-gradient"></span>
+      </div>
+    </div>
+
+    <div class="second-stroy__container__text">
+      <div class="second-stroy__container__text__title">
+        <h4><span class="orange_color">Принимайте решения </span>на&nbsp;основе данных</h4>
+      </div>
+      <img
+        src="{{ site.baseurl }}/assets/img/platformPage/secondImg.png"
+        alt="second-image"
+        srcset="{{
+    site.baseurl}}/assets/img/platformPage/secondImg382w.png 382w, {{
+    site.baseurl}}/assets/img/platformPage/secondImg592w.png 592w, {{ site.baseurl }}/assets/img/platformPage/secondImg.png 1200w"
+        sizes="(max-width: 540px) 382px, (max-width: 700px) 592px, 1200px"
+        loading="lazy"
+        id="mrs-second-image"
+        class="skeleton"
+      />
+      <p>{{ text.secondBlock }}</p>
+    </div>
+  </div>
+</section>

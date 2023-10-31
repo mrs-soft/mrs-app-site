@@ -15,7 +15,7 @@ sass:
   style: compressed
 
 include:
-  - .well-known/
+  - '.well-known/'
 
 #
 exclude:
